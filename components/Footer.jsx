@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div>
         <div style={{ fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, color: '#fff', textTransform: 'uppercase', marginBottom: 24 }}>
-          SRX<span style={{ opacity: 0.5 }}>\</span>Visuals
+          SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals
         </div>
         <p className="t-body-md" style={{ maxWidth: 380, color: 'var(--color-body)' }}>
           A studio for sports and creative visual work. Frame by frame, the work holds up.

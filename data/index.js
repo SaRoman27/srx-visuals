@@ -59,7 +59,7 @@ export const STATS = [
   { value: 'Fast',   label: 'Quick turnaround on delivery' },
 ];
 
-export const CLIENTS = ['WEXP · ', 'SRX\\Visuals · ', 'LS Athletics · '];
+export const CLIENTS = ['WEXP · ', 'SRX\\\\Visuals · ', 'LS Athletics · '];
 
 export const ABOUT_PORTRAITS = [
   '/sawyer-portrait.jpg',

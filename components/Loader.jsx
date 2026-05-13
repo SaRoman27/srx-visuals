@@ -12,7 +12,7 @@ export default function Loader() {
   if (hidden) return null;
   return (
     <div className="loader">
-      <div className="loader__wordmark">SRX<span style={{ opacity: 0.5 }}>\</span>Visuals</div>
+      <div className="loader__wordmark">SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals</div>
       <div className="loader__bar"><span /></div>
       <div className="loader__caption">Loading the archive · 2025 - 2026</div>
     </div>

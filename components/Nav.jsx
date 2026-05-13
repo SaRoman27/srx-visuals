@@ -39,7 +39,7 @@ export default function Nav() {
           justifySelf: 'center', color: '#fff', textDecoration: 'none',
           fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, textTransform: 'uppercase',
         }}>
-          SRX<span style={{ opacity: 0.5 }}>\</span>Visuals
+          SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals
         </Link>
 
         <div style={{ justifySelf: 'end' }}>
