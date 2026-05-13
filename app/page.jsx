@@ -4,55 +4,71 @@ import Reveal from '../components/Reveal';
 import Photo from '../components/Photo';
 import StatGrid from '../components/StatGrid';
 import Link from 'next/link';
-import { HERO_FRAMES, PROJECTS, STATS, CLIENTS } from '../data';
+import { HERO_FRAMES, GALLERY, PROJECTS, STATS, CLIENTS } from '../data';
 
 export default function HomePage() {
-  const featured = PROJECTS.slice(0, 3);
-
   return (
     <>
       <Hero
         frames={HERO_FRAMES}
-        eyebrow="Sports & creative photography — Philadelphia"
-        title="SRX Visuals"
-        sub="A studio for sports and creative visual work. Frame by frame, the work holds up."
+        eyebrow="Sports and creative photography - Philadelphia"
+        title={<>On the field.<br /><span style={{ opacity: 0.55 }}>In the moment.</span></>}
+        sub="Cinematic photography for sports, brands, and editorial. Cool, contrasted, and quietly composed."
       />
 
-      <Marquee words={CLIENTS} />
-
-      {/* Featured work */}
-      <section style={{ padding: '120px 64px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 64 }}>
+      {/* Mission strip */}
+      <section style={{ padding: '120px 64px 80px', borderBottom: '1px solid var(--color-hairline)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 80 }}>
           <div>
-            <div className="t-caption" style={{ color: 'var(--color-muted)', marginBottom: 12 }}>02 / SELECTED WORK</div>
-            <Reveal as="h2" className="t-display-md">Recent frames</Reveal>
-          </div>
-          <Link href="/portfolio" className="btn-ghost">View all</Link>
-        </div>
-        <div className="project-grid">
-          {featured.map((p, i) => (
-            <Reveal key={p.id} delay={i} className="tile">
-              <Photo src={p.cover} aspect="4/3" hoverZoom className="tile__photo" />
-              <div className="tile__meta">
-                <div className="t-caption" style={{ color: 'var(--color-muted)' }}>{p.sport} · {p.year}</div>
-                <div className="tile__title">{p.name}</div>
-                <div className="t-caption">{p.frames} frames</div>
-              </div>
+            <div className="t-caption" style={{ marginBottom: 24 }}>The studio - 01</div>
+            <Reveal as="div" style={{ fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, color: '#fff', textTransform: 'uppercase' }}>
+              SRX Visuals
             </Reveal>
-          ))}
+          </div>
+          <div>
+            <Reveal as="h2" style={{
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 5vw, 88px)',
+              lineHeight: 1.05, letterSpacing: 1, textTransform: 'uppercase', color: '#fff',
+              margin: 0, maxWidth: 1100
+            }}>
+              I make pictures of sport. Quiet,<br />
+              <span style={{ color: 'var(--color-muted)' }}>composed, and built to print.</span>
+            </Reveal>
+            <Reveal delay={1} as="p" style={{
+              marginTop: 48, fontFamily: 'var(--font-body)', fontSize: 22, lineHeight: 1.55,
+              color: 'var(--color-body-strong)', maxWidth: 720
+            }}>
+              SRX Visuals is a one-person studio based in Philadelphia. I cover match days, training grounds, and custom sessions for athletes, clubs, and brands who care about how their work looks.
+            </Reveal>
+            <Reveal delay={2} style={{ marginTop: 40, display: 'flex', gap: 24 }}>
+              <Link href="/portfolio" className="btn-primary">See the work</Link>
+              <Link href="/about" className="btn-ghost">About the studio</Link>
+            </Reveal>
+          </div>
         </div>
       </section>
 
-      {/* Full-bleed photo */}
-      <section style={{ position: 'relative', height: '70vh', overflow: 'hidden' }}>
-        <Photo src={PROJECTS[3].cover} kenburns style={{ width: '100%', height: '100%' }} />
-        <div style={{
-          position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column',
-          alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,.38)'
-        }}>
-          <div className="t-caption" style={{ letterSpacing: 6, marginBottom: 24 }}>FRAME · RALLY · 2024</div>
-          <h2 className="t-display-lg" style={{ textAlign: 'center', maxWidth: 800 }}>The decisive<br />moment.</h2>
-        </div>
+      {/* Full bleed editorial photo */}
+      <section style={{ padding: 0 }}>
+        <Reveal>
+          <div style={{ position: 'relative' }}>
+            <Photo
+              src={GALLERY[7].src}
+              aspect="21/9"
+              kenburns
+              style={{ width: '100%' }}
+            />
+            <div style={{ position: 'absolute', left: 64, bottom: 56, color: '#fff', maxWidth: 720 }}>
+              <div className="t-caption" style={{ marginBottom: 16, color: 'rgba(255,255,255,0.8)' }}>Frame study - 02</div>
+              <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 4vw, 72px)', lineHeight: 1, letterSpacing: 1, textTransform: 'uppercase' }}>
+                Cool light.<br />Long lens.<br /><span style={{ opacity: 0.6 }}>Wait.</span>
+              </div>
+            </div>
+            <div style={{ position: 'absolute', right: 64, bottom: 56, color: '#fff' }}>
+              <div className="t-caption" style={{ color: 'rgba(255,255,255,0.7)' }}>City Derby - Frame 2,140 - 21:9</div>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       {/* Film strip */}
@@ -66,25 +82,23 @@ export default function HomePage() {
         </div>
       </div>
 
-      <StatGrid stats={STATS} eyebrow="03 / BY THE NUMBERS" />
+      <StatGrid stats={STATS} eyebrow="Studio - 2025" />
 
-      {/* Services teaser */}
-      <section style={{ padding: '80px 64px 120px' }}>
-        <div className="t-caption" style={{ color: 'var(--color-muted)', marginBottom: 48 }}>04 / WHAT WE DO</div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
-          <Reveal className="service-row" style={{ border: '1px solid var(--color-rule)', padding: '40px 32px' }}>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: 11, letterSpacing: 4, color: 'var(--color-muted)', textTransform: 'uppercase', marginBottom: 16 }}>01</div>
-            <div className="t-display-sm" style={{ marginBottom: 16 }}>Sports photography</div>
-            <p className="t-body-sm" style={{ color: 'var(--color-body)' }}>Game-day, practice, sideline. Stills delivered on a fast turnaround for teams, leagues, and athletes.</p>
+      <Marquee words={CLIENTS} />
+
+      {/* Closing CTA */}
+      <section style={{ padding: '160px 64px', borderTop: '1px solid var(--color-hairline)', borderBottom: '1px solid var(--color-hairline)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 80, alignItems: 'flex-end' }}>
+          <Reveal as="h2" style={{
+            fontFamily: 'var(--font-display)', fontSize: 'clamp(64px, 10vw, 200px)',
+            lineHeight: 0.9, letterSpacing: 1, textTransform: 'uppercase', color: '#fff', margin: 0
+          }}>
+            Frame by<br /><span style={{ opacity: 0.55 }}>frame.</span>
           </Reveal>
-          <Reveal delay={1} className="service-row" style={{ border: '1px solid var(--color-rule)', padding: '40px 32px' }}>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: 11, letterSpacing: 4, color: 'var(--color-muted)', textTransform: 'uppercase', marginBottom: 16 }}>02</div>
-            <div className="t-display-sm" style={{ marginBottom: 16 }}>Custom requests</div>
-            <p className="t-body-sm" style={{ color: 'var(--color-body)' }}>Portraits, events, brand shoots, headshots — whatever the brief calls for.</p>
+          <Reveal delay={1} style={{ display: 'flex', flexDirection: 'column', gap: 24, alignItems: 'flex-end', paddingBottom: 32 }}>
+            <div className="t-caption" style={{ maxWidth: 320, textAlign: 'right' }}>Currently booking - 2026</div>
+            <Link href="/contact" className="btn-primary">Book a session</Link>
           </Reveal>
-        </div>
-        <div style={{ marginTop: 48, textAlign: 'center' }}>
-          <Link href="/services" className="btn-primary">See all services</Link>
         </div>
       </section>
     </>

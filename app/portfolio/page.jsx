@@ -1,75 +1,63 @@
-'use client';
-import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
-import Photo from '../../components/Photo';
-import Lightbox from '../../components/Lightbox';
 import Reveal from '../../components/Reveal';
-import { GALLERY } from '../../data';
-
-const CATS = ['all', 'sports', 'events', 'creative', 'esports'];
 
 export default function PortfolioPage() {
-  const [active, setActive] = useState('all');
-  const [lbIndex, setLbIndex] = useState(null);
-
-  const filtered = active === 'all' ? GALLERY : GALLERY.filter(g => g.cat === active);
-
   return (
     <>
-      <PageHeader index="01" eyebrow="Portfolio" title="The work." lede="Eight seasons of sport, motion, and stillness — captured frame by frame." />
+      <PageHeader
+        index="02 / 05"
+        eyebrow="Portfolio - The archive - Live gallery"
+        title={<>The<br />archive.</>}
+        lede="The full studio archive, served live from Pic-Time. Selected stills from 2024 through 2026 - match days, brand work, behind-the-scenes notes. Use the gallery controls to browse, favourite, or request prints."
+      />
 
-      {/* Filter pills */}
-      <div style={{ padding: '0 64px 64px', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-        {CATS.map(c => (
-          <button
-            key={c}
-            className={`filter-pill${active === c ? ' filter-pill--active' : ''}`}
-            onClick={() => setActive(c)}
-          >
-            {c}
-          </button>
-        ))}
-      </div>
+      {/* Pic-Time live embed */}
+      <section style={{ padding: 0 }}>
+        <div style={{
+          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          padding: '24px 64px', borderBottom: '1px solid var(--color-hairline)',
+          gap: 24, flexWrap: 'wrap'
+        }}>
+          <div className="t-caption">Live archive - srxvisuals.pic-time.com</div>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 12 }}>
+            <span style={{ width: 6, height: 6, background: '#5fa657', borderRadius: 9999, display: 'inline-block' }} />
+            <span className="t-caption" style={{ color: 'var(--color-body-strong)' }}>Connected - feed live</span>
+          </div>
+          <a href="https://srxvisuals.pic-time.com/client" target="_blank" rel="noreferrer" className="btn-ghost">
+            Open in full window
+          </a>
+        </div>
 
-      {/* Masonry-style gallery grid */}
-      <div className="gallery-grid" style={{ padding: '0 64px 120px' }}>
-        {filtered.map((item, i) => (
-          <Reveal
-            key={item.id}
-            delay={i % 4}
-            className="gallery-item"
-            style={{ gridColumn: `span ${item.span}` }}
-            onClick={() => setLbIndex(i)}
-          >
-            <Photo src={item.src} aspect={item.aspect} hoverZoom />
-            <div className="gallery-item__caption">
-              <span className="t-caption" style={{ color: 'var(--color-muted)' }}>{item.meta}</span>
-              <span className="t-caption">{item.title}</span>
-            </div>
-          </Reveal>
-        ))}
-      </div>
-
-      {/* Pic-Time embed */}
-      <section style={{ padding: '0 64px 120px' }}>
-        <div className="t-caption" style={{ marginBottom: 32, color: 'var(--color-muted)' }}>CLIENT GALLERY</div>
-        <iframe
-          src="https://srxvisuals.pic-time.com/client?headless=true"
-          style={{ width: '100%', height: 600, border: 'none', background: '#111' }}
-          title="SRX Visuals Client Gallery"
-          loading="lazy"
-        />
+        <div style={{ background: '#0a0a0a', padding: '24px', minHeight: 'calc(100vh - 200px)' }}>
+          <iframe
+            id="pictimeIntegration"
+            title="SRX Visuals - Pic-Time portfolio"
+            src="https://srxvisuals.pic-time.com/client?headless=true"
+            frameBorder="0"
+            style={{
+              width: '100%',
+              height: 'calc(100vh - 240px)',
+              minHeight: 800,
+              border: 0,
+              background: '#000',
+              display: 'block',
+            }}
+          />
+        </div>
       </section>
 
-      {lbIndex !== null && (
-        <Lightbox
-          items={filtered}
-          index={lbIndex}
-          onClose={() => setLbIndex(null)}
-          onPrev={() => setLbIndex(idx => (idx - 1 + filtered.length) % filtered.length)}
-          onNext={() => setLbIndex(idx => (idx + 1) % filtered.length)}
-        />
-      )}
+      {/* Archive CTA */}
+      <section style={{ padding: '120px 64px', borderTop: '1px solid var(--color-hairline)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+        <Reveal>
+          <div className="t-caption" style={{ marginBottom: 16 }}>Beyond the gallery - 2026</div>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: 22, lineHeight: 1.55, color: 'var(--color-body-strong)', maxWidth: 560 }}>
+            For private sets, unreleased frames, or licensing of any image in the archive - write to the studio and Sawyer will respond personally within two working days.
+          </p>
+        </Reveal>
+        <Reveal delay={1} style={{ alignSelf: 'center', justifySelf: 'end' }}>
+          <a href="mailto:archive@srxvisuals.com" className="btn-primary">Request the archive</a>
+        </Reveal>
+      </section>
     </>
   );
 }
