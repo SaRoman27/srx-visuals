@@ -62,7 +62,7 @@ export const STATS = [
 export const CLIENTS = ['WEXP · ', 'SRX\\Visuals · ', 'LS Athletics · '];
 
 export const ABOUT_PORTRAITS = [
-  '/sawyer-portrait.png',
+  '/sawyer-portrait.jpg',
   u('1502685104226-ee32379fefbe', 1200, 1500),
   u('1488161628813-04466f872be2', 1200, 1500),
 ];
