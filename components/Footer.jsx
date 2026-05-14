@@ -25,7 +25,6 @@ export default function Footer() {
       <div>
         <div className="footer__col-title">Social</div>
         <ul className="footer__list">
-          <li><a href="https://instagram.com/srxvisuals" target="_blank" rel="noreferrer">Instagram</a></li>
           <li><a href="https://srxvisuals.pic-time.com" target="_blank" rel="noreferrer">Pic-Time</a></li>
         </ul>
       </div>

@@ -73,7 +73,6 @@ export default function MenuOverlay({ open, current, onClose }) {
               hello@srxvisuals.com
             </a>
             <div style={{ display: 'flex', gap: 16, marginTop: 16 }}>
-              <span className="chip">Instagram</span>
               <span className="chip">Pic-Time</span>
             </div>
           </div>
