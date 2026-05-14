@@ -20,8 +20,13 @@ export default function MenuOverlay({ open, current, onClose }) {
   if (!open) return null;
 
   return (
-    <div className="page-fade" style={{ position: 'fixed', inset: 0, background: '#000', zIndex: 100, display: 'flex', flexDirection: 'column' }}>
-      <div style={{ height: 64, padding: '0 32px', display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center', borderBottom: '1px solid var(--color-hairline)' }}>
+    <div className="page-fade menu-overlay" style={{ position: 'fixed', inset: 0, background: '#000', zIndex: 100, display: 'flex', flexDirection: 'column', overflowY: 'auto' }}>
+      {/* Header bar */}
+      <div style={{
+        height: 64, padding: '0 var(--pad-x, 32px)', flexShrink: 0,
+        display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center',
+        borderBottom: '1px solid var(--color-hairline)',
+      }}>
         <div className="t-nav" style={{ color: 'var(--color-muted)', justifySelf: 'start' }}>Index · 05</div>
         <div style={{ justifySelf: 'center', fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, color: '#fff', textTransform: 'uppercase' }}>
           SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals
@@ -35,33 +40,35 @@ export default function MenuOverlay({ open, current, onClose }) {
         </button>
       </div>
 
-      <div style={{ flex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-        <div style={{ borderRight: '1px solid var(--color-hairline)', padding: 64, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+      {/* Body */}
+      <div className="menu-body" style={{ flex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: 0 }}>
+        {/* Nav links */}
+        <div className="menu-nav" style={{ borderRight: '1px solid var(--color-hairline)', padding: 'clamp(32px, 5vw, 64px)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
             {ITEMS.map((it, i) => (
               <Link key={it.href} href={it.href} onClick={onClose}
-                className="reveal is-visible"
                 data-delay={i}
                 style={{
-                  color: '#fff', textDecoration: 'none', padding: '8px 0',
-                  fontFamily: 'var(--font-display)', fontSize: 'clamp(56px,8vw,120px)',
+                  color: '#fff', textDecoration: 'none', padding: '10px 0',
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 8vw, 120px)',
                   letterSpacing: 1, textTransform: 'uppercase', lineHeight: 1,
-                  display: 'flex', alignItems: 'baseline', gap: 24,
+                  display: 'flex', alignItems: 'baseline', gap: 16,
                   borderBottom: '1px solid var(--color-hairline)',
                 }}>
-                <span style={{ fontSize: 11, letterSpacing: 2, fontFamily: 'var(--font-mono)', color: 'var(--color-muted)', minWidth: 32 }}>{it.meta}</span>
+                <span style={{ fontSize: 11, letterSpacing: 2, fontFamily: 'var(--font-mono)', color: 'var(--color-muted)', minWidth: 28, flexShrink: 0 }}>{it.meta}</span>
                 <span>{it.label}</span>
-                {current === it.href && <span style={{ marginLeft: 'auto', fontSize: 11, fontFamily: 'var(--font-mono)', color: 'var(--color-muted)', letterSpacing: 2 }}>NOW VIEWING</span>}
+                {current === it.href && <span style={{ marginLeft: 'auto', fontSize: 10, fontFamily: 'var(--font-mono)', color: 'var(--color-muted)', letterSpacing: 2 }}>NOW VIEWING</span>}
               </Link>
             ))}
           </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginTop: 32 }}>
             <div className="t-caption">Studio · Philadelphia, PA</div>
             <div className="t-caption">EST. 2025</div>
           </div>
         </div>
 
-        <div style={{ padding: 64, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        {/* Right panel — hidden on mobile */}
+        <div className="menu-panel" style={{ padding: 'clamp(32px, 5vw, 64px)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <div>
             <div className="t-caption" style={{ marginBottom: 32 }}>Latest frame</div>
             <Photo aspect="4/5" src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&h=1000&q=80" hoverZoom style={{ maxWidth: 360 }} />

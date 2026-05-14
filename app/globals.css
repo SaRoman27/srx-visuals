@@ -443,6 +443,11 @@ body::after { content: ''; position: fixed; inset: 0; z-index: 9999; pointer-eve
   /* Pic-Time iframe: fill screen height */
   .pictime-wrap iframe { height: calc(100vh - 160px) !important; min-height: 500px !important; }
 
+  /* Menu overlay: single column, hide right panel */
+  .menu-body { grid-template-columns: 1fr !important; }
+  .menu-panel { display: none !important; }
+  .menu-nav { border-right: none !important; }
+
   /* Buttons: don't constrain width on mobile */
   .btn-primary { height: 40px; padding: 0 24px; }
 

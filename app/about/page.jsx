@@ -116,18 +116,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Portrait grid */}
-      <section className="sp-x sp-b">
-        <div className="t-caption" style={{ marginBottom: 24 }}>Portraits - 04</div>
-        <div className="g-3-tight">
-          {ABOUT_PORTRAITS.map((src, i) => (
-            <Reveal key={i} delay={i}>
-              <Photo src={src} aspect="3/4" hoverZoom />
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       <Marquee words={['Wait · ', 'Frame · ', 'Print cool · ', 'Hold the line · ']} />
     </>
   );
