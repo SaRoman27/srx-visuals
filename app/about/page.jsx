@@ -33,7 +33,7 @@ export default function AboutPage() {
       <section className="sp">
         <div className="g-about">
           <Reveal>
-            <Photo src={ABOUT_PORTRAITS[0]} aspect="4/5" />
+            <Photo src={ABOUT_PORTRAITS[0]} aspect="4/5" objectPosition="35% center" />
             <div className="t-caption" style={{ marginTop: 16 }}>Sawyer Roman - Studio principal - 2026</div>
           </Reveal>
           <div>
