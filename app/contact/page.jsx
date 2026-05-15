@@ -5,10 +5,10 @@ import Reveal from '../../components/Reveal';
 import Marquee from '../../components/Marquee';
 
 const SUBJECTS = ['Sports', 'Editorial', 'Brand campaign', 'Esports', 'Long-form', 'Other'];
-const BUDGETS  = ['Under $500', '$500 - $1k', '$1k - $2.5k', '$2.5k - $5k', '$5k+'];
+const BUDGETS  = ['Under $100', '$100 - $250', '$250 - $500', '$500 - $1k', '$1k+'];
 
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: '', email: '', org: '', subject: 'Sports', brief: '', budget: '$1k - $2.5k' });
+  const [form, setForm] = useState({ name: '', email: '', org: '', subject: 'Sports', brief: '', budget: '$100 - $250' });
   const [sent, setSent] = useState(false);
 
   const set = (k) => (e) => setForm(f => ({ ...f, [k]: e.target.value }));

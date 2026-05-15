@@ -76,8 +76,8 @@ export default function MenuOverlay({ open, current, onClose }) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             <div className="t-caption">Reach the studio</div>
-            <a href="mailto:hello@srxvisuals.com" style={{ color: '#fff', fontFamily: 'var(--font-display)', fontSize: 24, letterSpacing: 1, textDecoration: 'none' }}>
-              hello@srxvisuals.com
+            <a href="mailto:sawyer@srxvisuals.com" style={{ color: '#fff', fontFamily: 'var(--font-display)', fontSize: 24, letterSpacing: 1, textDecoration: 'none' }}>
+              sawyer@srxvisuals.com
             </a>
             <div style={{ display: 'flex', gap: 16, marginTop: 16 }}>
               <span className="chip">Pic-Time</span>
