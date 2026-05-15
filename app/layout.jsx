@@ -10,8 +10,8 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'SRX Visuals — Sports & Creative Photography',
-  description: 'A studio for sports and creative visual work. Frame by frame, the work holds up.',
+  title: 'SRX Visuals | Sports & Creative Photography',
+  description: 'Sports and creative photography out of Philadelphia. Track meets, game days, and custom work.',
   openGraph: {
     title: 'SRX Visuals',
     description: 'Sports & creative photography studio based in Philadelphia.',

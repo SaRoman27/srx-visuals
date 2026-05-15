@@ -13,7 +13,7 @@ export default function HomePage() {
         frames={HERO_FRAMES}
         eyebrow="Sports and creative photography · Philadelphia"
         title={<>On the field.<br /><span style={{ opacity: 0.55 }}>In the moment.</span></>}
-        sub="I'm a track and field athlete who shoots the sports I love — meets, game days, custom sessions, and everything in between."
+        sub="I'm a track and field athlete who shoots the sports I love: meets, game days, custom sessions, and everything in between."
       />
 
       {/* Mission strip */}
@@ -41,7 +41,7 @@ export default function HomePage() {
               marginTop: 40, fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 2.2vw, 22px)', lineHeight: 1.55,
               color: 'var(--color-body-strong)',
             }}>
-              SRX Visuals is a one-person photography studio out of Philadelphia. I'm a track and field athlete who started shooting the sports I compete in — and kept going. I cover meets, game days, practices, and custom sessions for athletes, teams, and brands who want photos that actually look good.
+              SRX Visuals is a one-person photography studio out of Philadelphia. I'm a track and field athlete who started shooting the sports I compete in, and kept going. I cover meets, game days, practices, and custom sessions for athletes, teams, and brands who want photos that actually look good.
             </Reveal>
             <Reveal delay={2} style={{ marginTop: 40, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
               <Link href="/portfolio" className="btn-primary">See the work</Link>

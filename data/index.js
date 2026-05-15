@@ -40,13 +40,13 @@ export const GALLERY = [
 export const SERVICES = [
   {
     num: '01', title: 'Sports photography',
-    desc: 'Track meets, game days, practices, tournaments — I cover it all. As an athlete myself, I know where the good moments happen and how to be in position when they do. Delivered within 24 hours.',
+    desc: 'Track meets, game days, practices, tournaments. I cover it all. As an athlete myself, I know where the good moments happen and how to be in position when they do. Delivered within 24 hours.',
     cover: u('1571019613454-1cb2f99b2d8b', 800, 600),
     bullets: ['Track & field meets', 'Multi-sport game days', 'Season-long coverage'],
   },
   {
     num: '02', title: 'Custom work',
-    desc: "Got something specific in mind? I'm open to it. Portraits, headshots, brand shoots, events — if you have a vision, I'll work with you to bring it to life. Every project gets the same level of attention.",
+    desc: "Got something specific in mind? I'm open to it. Portraits, headshots, brand shoots, events. If you have a vision, I'll work with you to bring it to life. Every project gets the same level of attention.",
     cover: u('1517649763962-0c623066013b', 800, 600),
     bullets: ['Athlete portraits & headshots', 'Brand and event coverage', 'Personal projects'],
   },

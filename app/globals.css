@@ -345,7 +345,7 @@ body::after { content: ''; position: fixed; inset: 0; z-index: 9999; pointer-eve
 .g-method-row   { display: grid; grid-template-columns: 80px 200px 1fr; gap: 32px; padding: 32px 0; border-bottom: 1px solid var(--color-hairline); }
 .g-timeline-row { display: grid; grid-template-columns: 120px 1fr 1.2fr; gap: 32px; padding: 32px 0; border-bottom: 1px solid var(--color-hairline); }
 
-/* Full-bleed photo text anchors — use var(--pad-x) so they follow the breakpoint */
+/* Full-bleed photo text anchors, use var(--pad-x) so they follow the breakpoint */
 .bleed-label-l { position: absolute; left: var(--pad-x); bottom: 56px; color: #fff; max-width: 720px; }
 .bleed-label-r { position: absolute; right: var(--pad-x); bottom: 56px; color: #fff; }
 

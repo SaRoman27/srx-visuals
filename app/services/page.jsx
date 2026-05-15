@@ -27,7 +27,7 @@ export default function ServicesPage() {
         index="03 / 05"
         eyebrow="Services - What I offer"
         title={<>What I<br />shoot.</>}
-        lede="Sports coverage and custom work — both handled the same way. From a single meet to a full season, I deliver photos that are actually worth keeping."
+        lede="Sports coverage and custom work, both handled the same way. From a single meet to a full season, I deliver photos that are actually worth keeping."
       />
 
       {/* Service rows */}

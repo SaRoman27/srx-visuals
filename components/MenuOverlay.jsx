@@ -67,7 +67,7 @@ export default function MenuOverlay({ open, current, onClose }) {
           </div>
         </div>
 
-        {/* Right panel — hidden on mobile */}
+        {/* Right panel, hidden on mobile */}
         <div className="menu-panel" style={{ padding: 'clamp(32px, 5vw, 64px)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <div>
             <div className="t-caption" style={{ marginBottom: 32 }}>Latest frame</div>

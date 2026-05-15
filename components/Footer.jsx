@@ -8,7 +8,7 @@ export default function Footer() {
           SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals
         </div>
         <p className="t-body-md" style={{ maxWidth: 380, color: 'var(--color-body)' }}>
-          Sports and creative photography out of Philadelphia. Track meets, game days, and custom work — done right.
+          Sports and creative photography out of Philadelphia. Track meets, game days, and custom work. Done right.
         </p>
         <div style={{ marginTop: 32 }}>
           <Link href="/contact" className="btn-primary">Book a session</Link>

@@ -27,7 +27,7 @@ export default function ContactPage() {
         index="05 / 05"
         eyebrow="Contact - Reach out"
         title={<>Let's work<br />together.</>}
-        lede="Track meets, game days, portraits, events, custom work — I'm open to it. Based in Philadelphia, available to travel. I respond within two business days."
+        lede="Track meets, game days, portraits, events, custom work. I'm open to it. Based in Philadelphia, available to travel. I respond within two business days."
       />
 
       <section className="sp" style={{ borderBottom: '1px solid var(--color-hairline)' }}>
