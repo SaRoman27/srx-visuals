@@ -28,8 +28,8 @@ export default function MenuOverlay({ open, current, onClose }) {
         borderBottom: '1px solid var(--color-hairline)',
       }}>
         <div className="t-nav" style={{ color: 'var(--color-muted)', justifySelf: 'start' }}>Index · 05</div>
-        <div style={{ justifySelf: 'center', fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, color: '#fff', textTransform: 'uppercase' }}>
-          SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals
+        <div style={{ justifySelf: 'center' }}>
+          <img src="/srx-wordmark.svg" alt="SRX Visuals" height="28" style={{ display: 'block' }} />
         </div>
         <button onClick={onClose} className="t-nav" style={{ justifySelf: 'end', background: 'transparent', border: 0, color: '#fff', cursor: 'pointer', padding: 0, display: 'inline-flex', alignItems: 'center', gap: 12 }}>
           Close

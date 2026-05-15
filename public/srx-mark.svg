@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" fill="none">
+  <!-- Viewfinder corner brackets -->
+  <g stroke="#ffffff" stroke-width="2.5" stroke-linecap="square">
+    <polyline points="0,11 0,0 11,0"/>
+    <polyline points="29,0 40,0 40,11"/>
+    <polyline points="0,29 0,40 11,40"/>
+    <polyline points="29,40 40,40 40,29"/>
+  </g>
+  <!-- Lens ring -->
+  <circle cx="20" cy="20" r="8.5" stroke="#ffffff" stroke-width="1.5"/>
+  <!-- Aperture center -->
+  <circle cx="20" cy="20" r="2.5" fill="#ffffff"/>
+</svg>

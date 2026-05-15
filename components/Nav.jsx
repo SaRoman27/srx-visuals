@@ -35,11 +35,8 @@ export default function Nav() {
           Menu
         </button>
 
-        <Link href="/" style={{
-          justifySelf: 'center', color: '#fff', textDecoration: 'none',
-          fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, textTransform: 'uppercase',
-        }}>
-          SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals
+        <Link href="/" style={{ justifySelf: 'center', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+          <img src="/srx-wordmark.svg" alt="SRX Visuals" height="32" style={{ display: 'block' }} />
         </Link>
 
         <div style={{ justifySelf: 'end' }}>

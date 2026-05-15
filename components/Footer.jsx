@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div>
-        <div style={{ fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, color: '#fff', textTransform: 'uppercase', marginBottom: 24 }}>
-          SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals
+        <div style={{ marginBottom: 24 }}>
+          <img src="/srx-wordmark.svg" alt="SRX Visuals" height="36" style={{ display: 'block' }} />
         </div>
         <p className="t-body-md" style={{ maxWidth: 380, color: 'var(--color-body)' }}>
           Sports and creative photography out of Philadelphia. Track meets, game days, and custom work. Done right.

@@ -1,4 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 60" width="600" height="60">
-  
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" class="w">SRX VISUALS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" width="260" height="48" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&amp;family=JetBrains+Mono:wght@400&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Viewfinder mark, 36×36, vertically centered in 48px -->
+  <g transform="translate(0,6)" stroke="#ffffff" stroke-width="2.5" stroke-linecap="square" fill="none">
+    <polyline points="0,10 0,0 10,0"/>
+    <polyline points="26,0 36,0 36,10"/>
+    <polyline points="0,26 0,36 10,36"/>
+    <polyline points="26,36 36,36 36,26"/>
+    <circle cx="18" cy="18" r="7.5" stroke-width="1.5"/>
+    <circle cx="18" cy="18" r="2.5" fill="#ffffff" stroke="none"/>
+  </g>
+
+  <!-- Vertical rule -->
+  <line x1="52" y1="5" x2="52" y2="43" stroke="#ffffff" stroke-width="0.75" opacity="0.2"/>
+
+  <!-- SRX -->
+  <text x="64" y="36"
+    font-family="'Saira Condensed', 'Arial Narrow', sans-serif"
+    font-size="32" font-weight="500"
+    fill="#ffffff" letter-spacing="2">SRX</text>
+
+  <!-- VISUALS -->
+  <text x="65" y="47"
+    font-family="'JetBrains Mono', 'Courier New', monospace"
+    font-size="9.5" font-weight="400"
+    fill="rgba(255,255,255,0.5)" letter-spacing="4.5">VISUALS</text>
 </svg>
