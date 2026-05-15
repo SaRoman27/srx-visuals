@@ -49,7 +49,7 @@ export default function ServicesPage() {
                 <Photo src={s.cover} aspect="4/3" hoverZoom />
               </div>
             </div>
-            <div style={{ color: '#fff', justifySelf: 'end', fontSize: 20 }}>→</div>
+            <Link href="/contact" style={{ color: '#fff', justifySelf: 'end', fontSize: 20, textDecoration: 'none' }}>→</Link>
           </Reveal>
         ))}
       </section>

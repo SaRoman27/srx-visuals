@@ -45,10 +45,22 @@ export const SERVICES = [
     bullets: ['Track & field meets', 'Multi-sport game days', 'Season-long coverage'],
   },
   {
-    num: '02', title: 'Custom work',
+    num: '02', title: 'Athlete portraits',
+    desc: 'Individual sessions for athletes who want photos that actually represent them. Action shots, posed portraits, or both. Good for profiles, recruiting, and social media.',
+    cover: u('1521412644187-c49fa049e84d', 800, 600),
+    bullets: ['Action & posed portraits', 'Recruiting packages', 'Social media content'],
+  },
+  {
+    num: '03', title: 'Team coverage',
+    desc: 'Full team shoots, group photos, and sideline coverage for the whole roster. I work fast and keep it organized so nobody is standing around waiting.',
+    cover: u('1574629810360-7efbbe195018', 800, 600),
+    bullets: ['Team & group photos', 'Full roster sessions', 'Game-day sideline'],
+  },
+  {
+    num: '04', title: 'Custom work',
     desc: "Got something specific in mind? I'm open to it. Portraits, headshots, brand shoots, events. If you have a vision, I'll work with you to bring it to life. Every project gets the same level of attention.",
     cover: u('1517649763962-0c623066013b', 800, 600),
-    bullets: ['Athlete portraits & headshots', 'Brand and event coverage', 'Personal projects'],
+    bullets: ['Headshots & brand shoots', 'Event coverage', 'Personal projects'],
   },
 ];
 
