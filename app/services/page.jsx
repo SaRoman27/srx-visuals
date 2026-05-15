@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'Services | Sports Photography, Athlete Portraits & More',
+  description: 'Philadelphia sports photography services: track meets, game-day coverage, athlete portraits, team photos, and custom sessions. Selects delivered within 24 hours.',
+  alternates: { canonical: 'https://srxvisuals.com/services' },
+  openGraph: {
+    title: 'Services | SRX Visuals Sports Photography Philadelphia',
+    description: 'Track meets, game-day coverage, athlete portraits, team photos, and custom sessions. Based in Philadelphia, available to travel.',
+    url: 'https://srxvisuals.com/services',
+  },
+};
+
 import PageHeader from '../../components/PageHeader';
 import Photo from '../../components/Photo';
 import Reveal from '../../components/Reveal';
@@ -46,7 +57,7 @@ export default function ServicesPage() {
             <p className="t-body-md svc-desc" style={{ color: 'var(--color-body)' }}>{s.desc}</p>
             <div className="svc-img" style={{ display: 'flex', justifyContent: 'flex-end' }}>
               <div style={{ width: '100%', maxWidth: 280 }}>
-                <Photo src={s.cover} aspect="4/3" hoverZoom />
+                <Photo src={s.cover} aspect="4/3" hoverZoom alt={`${s.title} — SRX Visuals Philadelphia`} />
               </div>
             </div>
             <Link href="/contact" style={{ color: '#fff', justifySelf: 'end', fontSize: 20, textDecoration: 'none' }}>→</Link>

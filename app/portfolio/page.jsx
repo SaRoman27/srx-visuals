@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'Portfolio | Sports Photography by SRX Visuals',
+  description: 'Browse the SRX Visuals photo archive — track meets, game days, athlete portraits, and creative sessions from 2023 through 2026. Based in Philadelphia, PA.',
+  alternates: { canonical: 'https://srxvisuals.com/portfolio' },
+  openGraph: {
+    title: 'Portfolio | Sports Photography by SRX Visuals',
+    description: 'Track meets, game days, athlete portraits, and creative sessions from 2023 through 2026.',
+    url: 'https://srxvisuals.com/portfolio',
+  },
+};
+
 import PageHeader from '../../components/PageHeader';
 import Reveal from '../../components/Reveal';
 

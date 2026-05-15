@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'SRX Visuals | Sports Photographer in Philadelphia, PA',
+  description: 'SRX Visuals is a Philadelphia sports photography studio run by Sawyer Roman — a track and field athlete covering meets, game days, athlete portraits, and custom sessions.',
+  alternates: { canonical: 'https://srxvisuals.com' },
+  openGraph: {
+    title: 'SRX Visuals | Sports Photographer in Philadelphia, PA',
+    description: 'Track meets, game days, athlete portraits, and custom sessions. Philadelphia sports photographer and track & field athlete.',
+    url: 'https://srxvisuals.com',
+  },
+};
+
 import Hero from '../components/Hero';
 import Marquee from '../components/Marquee';
 import Reveal from '../components/Reveal';
@@ -21,7 +32,7 @@ export default function HomePage() {
         <div className="g-split">
           <div>
             <Reveal style={{ marginBottom: 24 }}>
-              <Photo src={GALLERY[4].src} aspect="3/4" style={{ width: '100%' }} />
+              <Photo src={GALLERY[4].src} aspect="3/4" style={{ width: '100%' }} alt="Track and field athlete mid-stride — SRX Visuals Philadelphia sports photography" />
             </Reveal>
             <div className="t-caption" style={{ marginBottom: 12 }}>The studio - 01</div>
             <Reveal as="div" style={{ fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, color: '#fff', textTransform: 'uppercase' }}>
@@ -53,7 +64,7 @@ export default function HomePage() {
 
       {/* Full bleed editorial photo */}
       <section style={{ padding: 0, position: 'relative' }}>
-        <Photo src={GALLERY[7].src} aspect="21/9" kenburns style={{ width: '100%' }} />
+        <Photo src={GALLERY[7].src} aspect="21/9" kenburns style={{ width: '100%' }} alt="Sports photography editorial frame by SRX Visuals, Philadelphia" />
         <div className="bleed-label-l">
           <div className="t-caption" style={{ marginBottom: 16, color: 'rgba(255,255,255,0.8)' }}>Frame study - 02</div>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 72px)', lineHeight: 1, letterSpacing: 1, textTransform: 'uppercase' }}>
@@ -70,7 +81,7 @@ export default function HomePage() {
         <div className="filmstrip__track">
           {[...PROJECTS, ...PROJECTS].map((p, i) => (
             <div key={i} className="filmstrip__frame">
-              <Photo src={p.cover} aspect="3/2" />
+              <Photo src={p.cover} aspect="3/2" alt={`${p.name} — ${p.sport} photography by SRX Visuals`} />
             </div>
           ))}
         </div>

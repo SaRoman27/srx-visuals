@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'About Sawyer Roman | Philadelphia Sports Photographer',
+  description: 'Sawyer Roman is a track and field athlete and sports photographer based in Philadelphia, PA. Founder of SRX Visuals — covering meets, game days, and custom sessions since 2023.',
+  alternates: { canonical: 'https://srxvisuals.com/about' },
+  openGraph: {
+    title: 'About Sawyer Roman | Philadelphia Sports Photographer',
+    description: 'Track and field athlete turned photographer. Based in Philadelphia, covering sports and custom sessions since 2023.',
+    url: 'https://srxvisuals.com/about',
+  },
+};
+
 import PageHeader from '../../components/PageHeader';
 import Photo from '../../components/Photo';
 import Reveal from '../../components/Reveal';
@@ -32,7 +43,7 @@ export default function AboutPage() {
       <section className="sp">
         <div className="g-about">
           <Reveal>
-            <Photo src={ABOUT_PORTRAITS[0]} aspect="4/5" objectPosition="35% center" />
+            <Photo src={ABOUT_PORTRAITS[0]} aspect="4/5" objectPosition="35% center" alt="Sawyer Roman — sports photographer and track & field athlete, Philadelphia PA" />
             <div className="t-caption" style={{ marginTop: 16 }}>Sawyer Roman - Studio principal - 2026</div>
           </Reveal>
           <div>
@@ -88,7 +99,7 @@ export default function AboutPage() {
 
       {/* Full-bleed portrait */}
       <section style={{ padding: 0 }}>
-        <Photo src={ABOUT_PORTRAITS[1]} aspect="21/9" kenburns style={{ width: '100%' }} />
+        <Photo src={ABOUT_PORTRAITS[1]} aspect="21/9" kenburns style={{ width: '100%' }} alt="SRX Visuals sports photography — Philadelphia PA" />
       </section>
 
       {/* Timeline */}
