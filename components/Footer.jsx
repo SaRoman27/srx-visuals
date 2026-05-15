@@ -7,8 +7,11 @@ export default function Footer() {
         <div style={{ marginBottom: 24 }}>
           <img src="/srx-wordmark.svg" alt="SRX Visuals" height="36" style={{ display: 'block' }} />
         </div>
-        <p className="t-body-md" style={{ maxWidth: 380, color: 'var(--color-body)' }}>
-          Sports and creative photography out of Philadelphia. Track meets, game days, and custom work. Done right.
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(15px, 1.6vw, 18px)', fontStyle: 'italic', color: 'var(--color-body-strong)', marginBottom: 8 }}>
+          Trained to compete. Built to capture.
+        </p>
+        <p className="t-body-md" style={{ maxWidth: 340, color: 'var(--color-body)' }}>
+          Sports and creative photography out of Philadelphia.
         </p>
         <div style={{ marginTop: 32 }}>
           <Link href="/contact" className="btn-primary">Book a session</Link>

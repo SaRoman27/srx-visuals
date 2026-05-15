@@ -15,7 +15,7 @@ export const metadata = {
     default: 'SRX Visuals | Sports Photographer in Philadelphia, PA',
     template: '%s | SRX Visuals',
   },
-  description: 'SRX Visuals is a Philadelphia sports photography studio run by Sawyer Roman — a track and field athlete who covers meets, game days, athlete portraits, and custom sessions across the Philadelphia area.',
+  description: 'Trained to compete. Built to capture. SRX Visuals is a Philadelphia sports photography studio run by Sawyer Roman — a track and field athlete covering meets, game days, athlete portraits, and custom sessions.',
   keywords: [
     'sports photographer Philadelphia',
     'track and field photographer Philadelphia',

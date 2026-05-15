@@ -24,7 +24,7 @@ export default function HomePage() {
         frames={HERO_FRAMES}
         eyebrow="Sports and creative photography · Philadelphia"
         title={<>On the field.<br /><span style={{ opacity: 0.55 }}>In the moment.</span></>}
-        sub="I'm a track and field athlete who shoots the sports I love: meets, game days, custom sessions, and everything in between."
+        sub="Trained to compete. Built to capture."
       />
 
       {/* Mission strip */}

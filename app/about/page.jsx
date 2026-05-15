@@ -54,6 +54,11 @@ export default function AboutPage() {
             }}>
               Sawyer Roman, athlete and photographer, since 2023.
             </Reveal>
+            <Reveal delay={1} style={{ marginTop: 28 }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(20px, 2.6vw, 28px)', fontStyle: 'italic', lineHeight: 1.3, color: '#fff', borderLeft: '2px solid rgba(255,255,255,0.2)', paddingLeft: 20, margin: 0 }}>
+                Trained to compete. Built to capture.
+              </p>
+            </Reveal>
             <Reveal delay={1} style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 20 }}>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.6, color: 'var(--color-body-strong)' }}>
                 I'm a track and field athlete based in Philadelphia. I started photographing sports because I wanted better coverage of the events I was already competing in. Once I had a camera on the sideline, I didn't want to put it down.
@@ -126,7 +131,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Marquee words={['Track & field · ', 'Multi-sport · ', 'Philadelphia · ', 'Custom work · ']} />
+      <Marquee words={['Trained to compete · ', 'Built to capture · ', 'Philadelphia · ', 'Track & field · ']} />
     </>
   );
 }
