@@ -41,25 +41,25 @@ export const SERVICES = [
   {
     num: '01', title: 'Sports photography',
     desc: 'Track meets, game days, practices, tournaments. I cover it all. As an athlete myself, I know where the good moments happen and how to be in position when they do. Delivered within 24 hours.',
-    cover: u('1571019613454-1cb2f99b2d8b', 800, 600),
+    cover: u('thzJfzNiH5I', 800, 600),
     bullets: ['Track & field meets', 'Multi-sport game days', 'Season-long coverage'],
   },
   {
     num: '02', title: 'Athlete portraits',
     desc: 'Individual sessions for athletes who want photos that actually represent them. Action shots, posed portraits, or both. Good for profiles, recruiting, and social media.',
-    cover: u('1521412644187-c49fa049e84d', 800, 600),
+    cover: u('9HI8UJMSdZA', 800, 600),
     bullets: ['Action & posed portraits', 'Recruiting packages', 'Social media content'],
   },
   {
     num: '03', title: 'Team coverage',
     desc: 'Full team shoots, group photos, and sideline coverage for the whole roster. I work fast and keep it organized so nobody is standing around waiting.',
-    cover: u('1574629810360-7efbbe195018', 800, 600),
+    cover: u('apEHrQeA_jc', 800, 600),
     bullets: ['Team & group photos', 'Full roster sessions', 'Game-day sideline'],
   },
   {
     num: '04', title: 'Custom work',
     desc: "Got something specific in mind? I'm open to it. Portraits, headshots, brand shoots, events. If you have a vision, I'll work with you to bring it to life. Every project gets the same level of attention.",
-    cover: u('1517649763962-0c623066013b', 800, 600),
+    cover: u('GpM4P__U7ug', 800, 600),
     bullets: ['Headshots & brand shoots', 'Event coverage', 'Personal projects'],
   },
 ];
