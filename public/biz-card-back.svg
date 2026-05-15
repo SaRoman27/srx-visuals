@@ -21,9 +21,6 @@
   <!-- ── FULL-BLEED BACKGROUND ── -->
   <rect width="1125" height="675" fill="#000000"/>
 
-  <!-- Subtle grid texture (very faint) -->
-  <line x1="0" y1="337.5" x2="1125" y2="337.5" stroke="#ffffff" stroke-width="0.4" opacity="0.04"/>
-  <line x1="562.5" y1="0" x2="562.5" y2="675" stroke="#ffffff" stroke-width="0.4" opacity="0.04"/>
 
   <!-- ══════════════════════════════════════════════
        DESIGN CONTENT — centered on card
