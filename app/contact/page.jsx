@@ -17,7 +17,7 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const body = `Name: ${form.name}\nOrg: ${form.org}\nSubject: ${form.subject}\nBudget: ${form.budget}\n\n${form.brief}`;
-    window.location.href = `mailto:hello@srxvisuals.com?subject=Project inquiry - ${encodeURIComponent(form.subject)} from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:sawyer@srxvisuals.com?subject=Project inquiry - ${encodeURIComponent(form.subject)} from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(body)}`;
     setSent(true);
   };
 
@@ -36,12 +36,12 @@ export default function ContactPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 48 }}>
             <Reveal>
               <div className="t-caption" style={{ marginBottom: 12 }}>Mail</div>
-              <a href="mailto:hello@srxvisuals.com" style={{
+              <a href="mailto:sawyer@srxvisuals.com" style={{
                 color: '#fff', textDecoration: 'none',
                 fontFamily: 'var(--font-display)', fontSize: 'clamp(20px, 2.4vw, 36px)',
                 letterSpacing: 1, textTransform: 'uppercase', display: 'block', marginBottom: 24
               }}>
-                hello@srxvisuals.com
+                sawyer@srxvisuals.com
               </a>
               <div className="t-caption" style={{ marginBottom: 12 }}>Press</div>
               <a href="mailto:press@srxvisuals.com" style={{
@@ -87,7 +87,7 @@ export default function ContactPage() {
             {sent ? (
               <div style={{ marginTop: 40, padding: '40px 0' }}>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: 32, letterSpacing: 2, textTransform: 'uppercase', color: '#fff', marginBottom: 16 }}>Sent.</div>
-                <p className="t-body-md" style={{ color: 'var(--color-body)' }}>Your email client should have opened. If not, write directly to hello@srxvisuals.com</p>
+                <p className="t-body-md" style={{ color: 'var(--color-body)' }}>Your email client should have opened. If not, write directly to sawyer@srxvisuals.com</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} style={{ marginTop: 40, display: 'flex', flexDirection: 'column', gap: 28 }}>
@@ -176,7 +176,7 @@ export default function ContactPage() {
           <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 2.2vw, 22px)', lineHeight: 1.55, color: 'var(--color-body-strong)', maxWidth: 480 }}>
             Currently booking for 2026. My calendar fills up fast around track season, so reach out early if you have something in mind.
           </p>
-          <a href="mailto:hello@srxvisuals.com" className="btn-primary">hello@srxvisuals.com</a>
+          <a href="mailto:sawyer@srxvisuals.com" className="btn-primary">sawyer@srxvisuals.com</a>
         </Reveal>
       </section>
     </>

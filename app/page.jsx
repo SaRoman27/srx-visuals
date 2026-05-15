@@ -20,7 +20,10 @@ export default function HomePage() {
       <section className="sp" style={{ paddingBottom: 80, borderBottom: '1px solid var(--color-hairline)' }}>
         <div className="g-split">
           <div>
-            <div className="t-caption" style={{ marginBottom: 24 }}>The studio - 01</div>
+            <Reveal style={{ marginBottom: 24 }}>
+              <Photo src={GALLERY[4].src} aspect="3/4" style={{ width: '100%' }} />
+            </Reveal>
+            <div className="t-caption" style={{ marginBottom: 12 }}>The studio - 01</div>
             <Reveal as="div" style={{ fontFamily: 'var(--font-display)', fontSize: 14, letterSpacing: 6, color: '#fff', textTransform: 'uppercase' }}>
               SRX Visuals
             </Reveal>

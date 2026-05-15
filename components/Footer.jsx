@@ -8,7 +8,7 @@ export default function Footer() {
           SRX<span style={{ opacity: 0.5 }}>\\</span>Visuals
         </div>
         <p className="t-body-md" style={{ maxWidth: 380, color: 'var(--color-body)' }}>
-          A studio for sports and creative visual work. Frame by frame, the work holds up.
+          Sports and creative photography out of Philadelphia. Track meets, game days, and custom work — done right.
         </p>
         <div style={{ marginTop: 32 }}>
           <Link href="/contact" className="btn-primary">Book a session</Link>
@@ -31,7 +31,7 @@ export default function Footer() {
       <div>
         <div className="footer__col-title">Reach</div>
         <ul className="footer__list">
-          <li><a href="mailto:hello@srxvisuals.com" style={{ fontSize: 14 }}>hello@srxvisuals.com</a></li>
+          <li><a href="mailto:sawyer@srxvisuals.com" style={{ fontSize: 14 }}>sawyer@srxvisuals.com</a></li>
           <li><a href="mailto:press@srxvisuals.com" style={{ fontSize: 14 }}>press@srxvisuals.com</a></li>
         </ul>
         <div className="t-caption" style={{ marginTop: 24, color: 'var(--color-muted)' }}>Philadelphia, PA</div>
