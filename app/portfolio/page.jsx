@@ -9,12 +9,14 @@ export const metadata = {
   },
 };
 
+import Script from 'next/script';
 import PageHeader from '../../components/PageHeader';
 import Reveal from '../../components/Reveal';
 
 export default function PortfolioPage() {
   return (
     <>
+      <Script src="https://embedding.pic-time.com/pictures/scripts/compiled/artgalleryembed.js" strategy="lazyOnload" />
       <PageHeader
         index="02 / 05"
         eyebrow="Portfolio - The archive - Live gallery"
@@ -29,7 +31,7 @@ export default function PortfolioPage() {
             <span style={{ width: 6, height: 6, background: '#5fa657', borderRadius: 9999, display: 'inline-block', flexShrink: 0 }} />
             <span className="t-caption" style={{ color: 'var(--color-body-strong)' }}>Connected - feed live</span>
           </div>
-          <a href="https://srxvisuals.pic-time.com/client" target="_blank" rel="noreferrer" className="btn-ghost">
+          <a href="https://media.srxvisuals.com/client" target="_blank" rel="noreferrer" className="btn-ghost">
             Open in full window
           </a>
         </div>
@@ -38,7 +40,7 @@ export default function PortfolioPage() {
           <iframe
             id="pictimeIntegration"
             title="SRX Visuals - Pic-Time portfolio"
-            src="https://srxvisuals.pic-time.com/client?headless=true"
+            src="https://media.srxvisuals.com/client?headless=true"
             frameBorder="0"
             style={{
               width: '100%',
