@@ -32,7 +32,6 @@ export default function Hero({ frames, eyebrow, title, sub }) {
           <div style={{ maxWidth: 480 }}>
             <p className="t-body-md" style={{ color: '#fff', opacity: 0.9 }}>{sub}</p>
           </div>
-          <div className="t-caption" style={{ color: '#fff', opacity: 0.8 }}>{frames[idx].caption}</div>
         </div>
       </div>
       <div className="hero__scroll-cue">
