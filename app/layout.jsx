@@ -63,6 +63,14 @@ export const metadata = {
   alternates: {
     canonical: 'https://srxvisuals.com',
   },
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
+    other: [
+      { rel: 'icon', url: '/icon-192.png', sizes: '192x192' },
+      { rel: 'icon', url: '/icon-512.png', sizes: '512x512' },
+    ],
+  },
 };
 
 const jsonLd = {
