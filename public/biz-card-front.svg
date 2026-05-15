@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ═══════════════════════════════════════════════════════════════════
+     SRX VISUALS — BUSINESS CARD FRONT
+     Canvas:  3.75" × 2.25" at 300 dpi = 1125 × 675 px  (includes bleed)
+     Trim:    3.5"  × 2"    at 300 dpi = offset 37.5 px from each edge
+     Safety:  3.25" × 1.75" at 300 dpi = offset 75 px from each edge
+     Colors:  All black = #000000 (C0 M0 Y0 K100). White = #ffffff.
+              For rich black backgrounds use C40 M30 Y30 K100 in Illustrator.
+     Export:  PDF Print, CMYK. Remove the GUIDES group before uploading.
+     ═══════════════════════════════════════════════════════════════════ -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1125 675"
+     width="1125" height="675">
+  <title>SRX Visuals Business Card — FRONT</title>
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+    ]]></style>
+  </defs>
+
+  <!-- ── FULL-BLEED BACKGROUND ── -->
+  <rect width="1125" height="675" fill="#000000"/>
+
+  <!-- ── GHOST "SRX" TEXTURE (very faint, full-bleed decorative) ── -->
+  <text x="562" y="490"
+    font-family="'Saira Condensed','Arial Narrow',sans-serif"
+    font-weight="800" font-size="540"
+    fill="#ffffff" fill-opacity="0.027"
+    text-anchor="middle">SRX</text>
+
+  <!-- ══════════════════════════════════════════════
+       DESIGN CONTENT — all within safety zone
+       (x: 75–1050, y: 75–600)
+       ══════════════════════════════════════════════ -->
+
+  <!-- Left accent bar -->
+  <rect x="96" y="108" width="3" height="459" fill="#ffffff" opacity="0.92"/>
+
+  <!-- Viewfinder mark (36×36) top-left -->
+  <g transform="translate(120, 96)"
+     stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="square">
+    <path d="M0,12 L0,0 L12,0"/>
+    <path d="M24,0 L36,0 L36,12"/>
+    <path d="M36,24 L36,36 L24,36"/>
+    <path d="M12,36 L0,36 L0,24"/>
+    <circle cx="18" cy="18" r="6.5"/>
+    <circle cx="18" cy="18" r="2" fill="#ffffff" stroke="none"/>
+  </g>
+
+  <!-- Header tag — top -->
+  <text x="176" y="122"
+    font-family="'JetBrains Mono','Courier New',monospace"
+    font-weight="500" font-size="20"
+    fill="#ffffff" fill-opacity="0.42"
+    letter-spacing="3.5">SRX · SPORTS PHOTOGRAPHER</text>
+
+  <!-- ── PRIMARY NAME ── -->
+  <text x="120" y="316"
+    font-family="'Saira Condensed','Arial Narrow',sans-serif"
+    font-weight="800" font-size="128"
+    fill="#ffffff" letter-spacing="3">SAWYER</text>
+  <text x="120" y="448"
+    font-family="'Saira Condensed','Arial Narrow',sans-serif"
+    font-weight="800" font-size="128"
+    fill="#ffffff" letter-spacing="3">ROMAN</text>
+
+  <!-- Thin rule -->
+  <line x1="120" y1="470" x2="740" y2="470"
+    stroke="#ffffff" stroke-width="0.75" opacity="0.22"/>
+
+  <!-- ── CONTACT BLOCK ── -->
+  <text x="120" y="507"
+    font-family="'JetBrains Mono','Courier New',monospace"
+    font-size="23" fill="#ffffff" fill-opacity="0.65"
+    letter-spacing="0.5">sawyer@srxvisuals.com</text>
+
+  <text x="120" y="543"
+    font-family="'JetBrains Mono','Courier New',monospace"
+    font-size="23" fill="#ffffff" fill-opacity="0.65"
+    letter-spacing="0.5">srxvisuals.com</text>
+
+  <text x="120" y="577"
+    font-family="'JetBrains Mono','Courier New',monospace"
+    font-size="23" fill="#ffffff" fill-opacity="0.38"
+    letter-spacing="0.5">Philadelphia, PA</text>
+
+  <!-- Motto — bottom right (italic, very subtle) -->
+  <text x="1038" y="578"
+    font-family="Georgia,'Times New Roman',serif"
+    font-style="italic" font-size="19"
+    fill="#ffffff" fill-opacity="0.28"
+    text-anchor="end">Trained to compete. Built to capture.</text>
+
+  <!-- ══════════════════════════════════════════════
+       GUIDES GROUP — DELETE THIS ENTIRE GROUP BEFORE PRINTING
+       ══════════════════════════════════════════════ -->
+  <g id="guides" opacity="1">
+    <!-- Trim line (blue dashed) = 3.5" × 2" -->
+    <rect x="37.5" y="37.5" width="1050" height="600"
+      fill="none" stroke="#0077ff" stroke-width="1.5" stroke-dasharray="9,4" opacity="0.75"/>
+    <!-- Safety line (green dashed) = 3.25" × 1.75" -->
+    <rect x="75" y="75" width="975" height="525"
+      fill="none" stroke="#00cc44" stroke-width="1" stroke-dasharray="5,5" opacity="0.55"/>
+    <!-- Labels -->
+    <text x="40" y="25"
+      font-family="'Courier New',monospace" font-size="15"
+      fill="#0077ff" opacity="0.95">TRIM 3.5"×2" | 300 DPI | CMYK | Bleed canvas: 3.75"×2.25" — REMOVE GUIDES BEFORE PRINT</text>
+    <text x="78" y="62"
+      font-family="'Courier New',monospace" font-size="12"
+      fill="#00cc44" opacity="0.8">SAFETY</text>
+    <!-- Corner crop marks -->
+    <line x1="0" y1="37.5" x2="25" y2="37.5" stroke="#0077ff" stroke-width="1" opacity="0.6"/>
+    <line x1="37.5" y1="0" x2="37.5" y2="25" stroke="#0077ff" stroke-width="1" opacity="0.6"/>
+    <line x1="1100" y1="37.5" x2="1125" y2="37.5" stroke="#0077ff" stroke-width="1" opacity="0.6"/>
+    <line x1="1087.5" y1="0" x2="1087.5" y2="25" stroke="#0077ff" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="637.5" x2="25" y2="637.5" stroke="#0077ff" stroke-width="1" opacity="0.6"/>
+    <line x1="37.5" y1="650" x2="37.5" y2="675" stroke="#0077ff" stroke-width="1" opacity="0.6"/>
+    <line x1="1100" y1="637.5" x2="1125" y2="637.5" stroke="#0077ff" stroke-width="1" opacity="0.6"/>
+    <line x1="1087.5" y1="650" x2="1087.5" y2="675" stroke="#0077ff" stroke-width="1" opacity="0.6"/>
+  </g>
+
+</svg>
