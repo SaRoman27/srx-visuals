@@ -53,7 +53,7 @@ export const SERVICES = [
   {
     num: '03', title: 'Team coverage',
     desc: 'Full team shoots, group photos, and sideline coverage for the whole roster. I work fast and keep it organized so nobody is standing around waiting.',
-    cover: 'https://images.pexels.com/photos/34514/pexels-photo-34514.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+    cover: u('1532444458054-01a7dd3e9fca', 800, 600),
     bullets: ['Team & group photos', 'Full roster sessions', 'Game-day sideline'],
   },
   {
