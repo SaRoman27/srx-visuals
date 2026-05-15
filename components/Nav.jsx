@@ -7,10 +7,17 @@ import MenuOverlay from './MenuOverlay';
 export default function Nav() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
+    let last = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled(y > 80);
+      setHidden(y > 120 && y > last);
+      last = y;
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -21,7 +28,8 @@ export default function Nav() {
         position: 'fixed', top: 0, left: 0, right: 0, height: 64, zIndex: 50,
         display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center',
         padding: '0 32px', background: 'transparent',
-        transition: 'border-color 300ms ease',
+        transition: 'transform 300ms ease, border-color 300ms ease',
+        transform: hidden && !menuOpen ? 'translateY(-100%)' : 'translateY(0)',
         borderBottom: scrolled ? '1px solid rgba(255,255,255,0.06)' : '1px solid transparent',
       }}>
         <button onClick={() => setMenuOpen(true)} className="t-nav" style={{
