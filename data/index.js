@@ -40,23 +40,23 @@ export const GALLERY = [
 export const SERVICES = [
   {
     num: '01', title: 'Sports photography',
-    desc: 'Game-day, practice, sideline. Stills delivered on a 24-hour turnaround for teams, leagues, and athletes.',
+    desc: 'Track meets, game days, practices, tournaments — I cover it all. As an athlete myself, I know where the good moments happen and how to be in position when they do. Delivered within 24 hours.',
     cover: u('1571019613454-1cb2f99b2d8b', 800, 600),
-    bullets: ['Match coverage', 'Editorial portraits', 'Tournament archives'],
+    bullets: ['Track & field meets', 'Multi-sport game days', 'Season-long coverage'],
   },
   {
-    num: '02', title: 'Custom requests',
-    desc: 'Portraits, events, brand shoots, headshots - whatever the brief calls for. Every project gets the same cinematic treatment.',
+    num: '02', title: 'Custom work',
+    desc: "Got something specific in mind? I'm open to it. Portraits, headshots, brand shoots, events — if you have a vision, I'll work with you to bring it to life. Every project gets the same level of attention.",
     cover: u('1517649763962-0c623066013b', 800, 600),
-    bullets: ['Portraits and headshots', 'Brand and event coverage', 'Personal projects'],
+    bullets: ['Athlete portraits & headshots', 'Brand and event coverage', 'Personal projects'],
   },
 ];
 
 export const STATS = [
-  { value: 'Philly', label: 'Based in Philadelphia, PA' },
-  { value: 'Sports', label: 'Game-day, practice, sideline' },
-  { value: 'Custom', label: 'Portraits, events, brand' },
-  { value: 'Fast',   label: 'Quick turnaround on delivery' },
+  { value: 'Philly',   label: 'Based in Philadelphia, PA' },
+  { value: 'Athlete',  label: 'Track & field competitor' },
+  { value: 'Multi',    label: 'Covers many sports' },
+  { value: '24hr',     label: 'Turnaround on selects' },
 ];
 
 export const CLIENTS = ['WEXP · ', 'SRX\\\\Visuals · ', 'LS Athletics · '];

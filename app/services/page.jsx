@@ -6,11 +6,11 @@ import Link from 'next/link';
 import { SERVICES } from '../../data';
 
 const METHODOLOGY = [
-  { n: '01', t: 'Brief',   d: 'A short call. I listen for the picture you want before talking about the cameras.' },
-  { n: '02', t: 'Recce',   d: 'For longer work, I visit the venue before shoot day to walk the angles and meet the people.' },
-  { n: '03', t: 'Capture', d: 'On the day. Tethered backup. No second chances on a match.' },
-  { n: '04', t: 'Edit',    d: 'Selects within 24 hours. Final grade within 72. All deliveries via signed download.' },
-  { n: '05', t: 'Archive', d: 'Every frame is kept on cold storage. Later requests for re-licensing are answered the same week.' },
+  { n: '01', t: 'Talk it through', d: "A quick conversation about what you need. I want to understand the event, the deliverables, and what you're going for before anything else." },
+  { n: '02', t: 'Prep',           d: 'For bigger projects, I scout the location beforehand so I already know my angles and positioning before shoot day.' },
+  { n: '03', t: 'Show up ready',  d: "On the day, I'm there early and set up before anything starts. Live events don't give you second chances, so I don't need them." },
+  { n: '04', t: 'Deliver fast',   d: 'Selects within 24 hours, final edits within 72. Everything is delivered through a secure download link.' },
+  { n: '05', t: 'Keep it safe',   d: 'I archive every shoot in long-term storage. If you need something re-delivered or want to revisit old work, just reach out.' },
 ];
 
 const CAPABILITY_STATS = [
@@ -25,9 +25,9 @@ export default function ServicesPage() {
     <>
       <PageHeader
         index="03 / 05"
-        eyebrow="Services - The studio offer"
-        title={<>What I<br />make.</>}
-        lede="Two categories of work, both produced under one creative direction. Engagements run from a single match day to ongoing season coverage."
+        eyebrow="Services - What I offer"
+        title={<>What I<br />shoot.</>}
+        lede="Sports coverage and custom work — both handled the same way. From a single meet to a full season, I deliver photos that are actually worth keeping."
       />
 
       {/* Service rows */}
@@ -63,7 +63,7 @@ export default function ServicesPage() {
               fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 88px)',
               lineHeight: 1.05, textTransform: 'uppercase', letterSpacing: 1, color: '#fff', margin: 0
             }}>
-              How the<br />studio works.
+              How I<br />work.
             </Reveal>
           </div>
           <div>
@@ -87,10 +87,10 @@ export default function ServicesPage() {
             fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 6vw, 96px)',
             lineHeight: 0.95, letterSpacing: 1, textTransform: 'uppercase', color: '#fff', margin: 0
           }}>
-            Discuss a brief.
+            Let's talk about your project.
           </Reveal>
           <Reveal delay={1}>
-            <Link href="/contact" className="btn-primary">Contact the studio</Link>
+            <Link href="/contact" className="btn-primary">Get in touch</Link>
           </Reveal>
         </div>
       </section>

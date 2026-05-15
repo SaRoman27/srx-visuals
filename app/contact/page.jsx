@@ -25,9 +25,9 @@ export default function ContactPage() {
     <>
       <PageHeader
         index="05 / 05"
-        eyebrow="Contact - The studio"
-        title={<>Tell me<br />about the work.</>}
-        lede="Sports, brand campaigns, editorial features, custom projects. I respond within two working days. Philadelphia, PA."
+        eyebrow="Contact - Reach out"
+        title={<>Let's work<br />together.</>}
+        lede="Track meets, game days, portraits, events, custom work — I'm open to it. Based in Philadelphia, available to travel. I respond within two business days."
       />
 
       <section className="sp" style={{ borderBottom: '1px solid var(--color-hairline)' }}>
@@ -80,7 +80,7 @@ export default function ContactPage() {
             <Reveal>
               <div className="t-caption" style={{ marginBottom: 24 }}>Inquiry - 01</div>
               <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 32, letterSpacing: 2, textTransform: 'uppercase', color: '#fff', margin: 0 }}>
-                The brief.
+                Tell me about it.
               </h2>
             </Reveal>
 
@@ -163,7 +163,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Marquee words={['Currently booking · ', 'Philadelphia, PA · ', 'Frame by frame · ']} />
+      <Marquee words={['Currently booking · ', 'Philadelphia, PA · ', 'Track & field · ', 'Custom work welcome · ']} />
 
       <section className="sp">
         <Reveal as="h2" style={{
@@ -174,7 +174,7 @@ export default function ContactPage() {
         </Reveal>
         <Reveal delay={1} style={{ marginTop: 48, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 24 }}>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 2.2vw, 22px)', lineHeight: 1.55, color: 'var(--color-body-strong)', maxWidth: 480 }}>
-            Currently taking on new projects for 2026. The calendar is filling - reach out early.
+            Currently booking for 2026. My calendar fills up fast around track season, so reach out early if you have something in mind.
           </p>
           <a href="mailto:hello@srxvisuals.com" className="btn-primary">hello@srxvisuals.com</a>
         </Reveal>

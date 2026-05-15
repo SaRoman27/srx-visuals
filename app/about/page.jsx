@@ -6,17 +6,16 @@ import Link from 'next/link';
 import { ABOUT_PORTRAITS } from '../../data';
 
 const PHILOSOPHY = [
-  { n: '01', t: 'Wait, then frame.', d: 'The picture exists before I lift the camera. My job is to be in the right place, lens at the right length, finger ready.' },
-  { n: '02', t: 'Cool, not warm.',   d: 'I grade neutral to cool. The studio canvas is black; the work has to read against it.' },
-  { n: '03', t: 'Print first.',      d: "Every frame is graded with print in mind. If it doesn't hold up at 24 inches, it doesn't leave the studio." },
+  { n: '01', t: 'Know the sport.', d: "I compete in track and field, so I already know where to stand when the gun fires. That background shows up in every shoot — I'm not guessing at the moment, I'm ready for it." },
+  { n: '02', t: 'Cool, not warm.', d: 'I grade neutral to cool across all my work. It gives everything a consistent, clean look that holds up whether you\'re viewing it on a screen or printing it large.' },
+  { n: '03', t: 'Built to last.',  d: "I edit with the final product in mind — whether that's a print, a post, or a publication. If it doesn't look right at full size, it doesn't leave my hands." },
 ];
 
 const TIMELINE = [
-  { y: '2025', t: 'SRX Visuals founded', d: 'Based out of Philadelphia. One photographer, one camera, no excuses.' },
-  { y: '2025', t: 'First season embedded', d: 'First full season sideline with WEXP and LS Athletics programs.' },
-  { y: '2024', t: 'The pivot.',            d: 'Left a day job to pursue sport photography seriously. The quality of light changed everything.' },
-  { y: '2024', t: 'First credential',      d: 'A sideline credential at a local derby match. One camera, one lens, zero backup cards.' },
-  { y: '2023', t: 'First frames.',         d: 'Started shooting local athletics events for practice. Monochrome from day one.' },
+  { y: '2025', t: 'SRX Visuals launched',  d: 'Started taking on clients officially under the SRX Visuals name. One photographer, one camera, fully committed.' },
+  { y: '2025', t: 'First full season',     d: 'Covered a complete season sideline with WEXP and LS Athletics — game days, practices, and everything between.' },
+  { y: '2024', t: 'First credential',      d: 'First sideline pass at a local derby match. One camera, one lens, zero backup cards. Figured it out.' },
+  { y: '2023', t: 'First frames',          d: 'Started shooting local track meets and athletics events. Monochrome from day one, because it just looked right.' },
 ];
 
 export default function AboutPage() {
@@ -26,7 +25,7 @@ export default function AboutPage() {
         index="04 / 05"
         eyebrow="About - The photographer"
         title={<>The<br />studio.</>}
-        lede="SRX Visuals was founded in 2025 by Sawyer Roman, working out of Philadelphia, PA. The studio stays small on purpose."
+        lede="SRX Visuals is run by Sawyer Roman — a track and field athlete and photographer based in Philadelphia, PA."
       />
 
       {/* Portrait + bio */}
@@ -42,24 +41,24 @@ export default function AboutPage() {
               fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4.4vw, 72px)',
               lineHeight: 1.05, letterSpacing: 1, textTransform: 'uppercase', color: '#fff', margin: 0
             }}>
-              Sawyer Roman - sports photographer, since 2025.
+              Sawyer Roman — athlete and photographer, since 2023.
             </Reveal>
             <Reveal delay={1} style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 20 }}>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.6, color: 'var(--color-body-strong)' }}>
-                I came to sports through magazines, not through fandom. I wanted to make pictures that held up the way the editorial portraits I grew up looking at did - quiet, considered, the subject given the room they earned.
+                I'm a track and field athlete based in Philadelphia. I started photographing sports because I wanted better coverage of the events I was already competing in — and once I had a camera on the sideline, I didn't want to put it down.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(15px, 1.8vw, 18px)', lineHeight: 1.65, color: 'var(--color-body)' }}>
-                SRX Visuals is the studio that work became. Based in Philadelphia, I shoot game days, training grounds, and custom sessions for athletes and brands who care about how their work looks.
+                SRX Visuals is how I work with clients. I shoot track meets, game days, and multi-sport events across the Philadelphia area. I also take on custom work — portraits, headshots, brand sessions, and whatever else you have in mind.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(15px, 1.8vw, 18px)', lineHeight: 1.65, color: 'var(--color-body)' }}>
-                The brief is always the same. Wait. Frame the moment that already exists. Print it cool.
+                Competing gives me a real advantage behind the lens. I know which moments matter and where to be when they happen — because I've been on the other side of the camera too.
               </p>
             </Reveal>
             <Reveal delay={2} style={{ marginTop: 32, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-              <span className="chip">Sports - since 2025</span>
+              <span className="chip">Track & field athlete</span>
               <span className="chip">Philadelphia, PA</span>
-              <span className="chip">Game-day coverage</span>
-              <span className="chip">Custom requests</span>
+              <span className="chip">Multi-sport coverage</span>
+              <span className="chip">Custom work welcome</span>
             </Reveal>
             <Reveal delay={3} style={{ marginTop: 32 }}>
               <Link href="/contact" className="btn-primary">Work together</Link>
@@ -116,7 +115,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Marquee words={['Wait · ', 'Frame · ', 'Print cool · ', 'Hold the line · ']} />
+      <Marquee words={['Track & field · ', 'Multi-sport · ', 'Philadelphia · ', 'Custom work · ']} />
     </>
   );
 }
