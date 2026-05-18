@@ -1,12 +1,43 @@
 export const metadata = {
-  title: 'Portfolio | Sports Photography by SRX Visuals',
-  description: 'Browse the SRX Visuals photo archive — track meets, game days, athlete portraits, and creative sessions from 2023 through 2026. Based in Philadelphia, PA.',
+  title: 'Portfolio | Sports Photography Archive — SRX Visuals Philadelphia',
+  description: 'Browse the live SRX Visuals photo archive — track meets, game days, athlete portraits, and creative sessions from 2023 through 2026. Sports photography by Sawyer Roman, Philadelphia PA.',
+  keywords: [
+    'sports photography portfolio Philadelphia',
+    'track meet photos Philadelphia',
+    'athlete portrait portfolio Philadelphia',
+    'game day photography portfolio',
+    'SRX Visuals portfolio',
+    'Sawyer Roman photography',
+    'Philadelphia sports photos',
+  ],
   alternates: { canonical: 'https://srxvisuals.com/portfolio' },
   openGraph: {
-    title: 'Portfolio | Sports Photography by SRX Visuals',
-    description: 'Track meets, game days, athlete portraits, and creative sessions from 2023 through 2026.',
+    title: 'Portfolio | Sports Photography Archive — SRX Visuals Philadelphia',
+    description: 'Live archive of track meets, game days, athlete portraits, and creative sessions from 2023 through 2026. Philadelphia sports photography by Sawyer Roman.',
     url: 'https://srxvisuals.com/portfolio',
   },
+};
+
+const portfolioSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': 'https://srxvisuals.com/portfolio#webpage',
+      url: 'https://srxvisuals.com/portfolio',
+      name: 'Sports Photography Portfolio | SRX Visuals Philadelphia',
+      description: 'Live archive of sports photography by Sawyer Roman — track meets, game days, athlete portraits, and creative sessions from 2023 through 2026.',
+      isPartOf: { '@id': 'https://srxvisuals.com/#website' },
+      author: { '@id': 'https://srxvisuals.com/#sawyer' },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://srxvisuals.com' },
+          { '@type': 'ListItem', position: 2, name: 'Portfolio', item: 'https://srxvisuals.com/portfolio' },
+        ],
+      },
+    },
+  ],
 };
 
 import Script from 'next/script';
@@ -16,6 +47,7 @@ import Reveal from '../../components/Reveal';
 export default function PortfolioPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(portfolioSchema) }} />
       <Script src="https://embedding.pic-time.com/pictures/scripts/compiled/artgalleryembed.js" strategy="lazyOnload" />
       <PageHeader
         index="02 / 05"

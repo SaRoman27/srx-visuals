@@ -1,14 +1,109 @@
 export const metadata = {
-  title: 'Services | Sports Photography, Athlete Portraits & More',
-  description: 'Philadelphia sports photography services: track meets, game-day coverage, athlete portraits, team photos, and custom sessions. Selects delivered within 24 hours.',
+  title: 'Services | Sports Photography, Athlete Portraits & Custom Sessions — Philadelphia',
+  description: 'Philadelphia sports photography services by SRX Visuals: track meet coverage, game-day sideline photography, athlete portraits, headshots, team photos, and custom sessions. Selects within 24 hours. Affordable rates.',
+  keywords: [
+    'track meet photography Philadelphia',
+    'game day photographer Philadelphia PA',
+    'athlete headshots Philadelphia',
+    'athlete portrait photographer Philadelphia',
+    'team photography Philadelphia',
+    'sports photography packages Philadelphia',
+    'sideline photographer Philadelphia',
+    'custom sports photography session Philadelphia',
+    'high school sports photographer Pennsylvania',
+    'sports photography services near me',
+  ],
   alternates: { canonical: 'https://srxvisuals.com/services' },
   openGraph: {
-    title: 'Services | SRX Visuals Sports Photography Philadelphia',
-    description: 'Track meets, game-day coverage, athlete portraits, team photos, and custom sessions. Based in Philadelphia, available to travel.',
+    title: 'Sports Photography Services | SRX Visuals Philadelphia',
+    description: 'Track meets, game-day sideline coverage, athlete portraits, team photos, and custom sessions in Philadelphia PA. Selects within 24 hours. Available to travel.',
     url: 'https://srxvisuals.com/services',
   },
 };
 
+const servicesSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://srxvisuals.com/services#webpage',
+      url: 'https://srxvisuals.com/services',
+      name: 'Sports Photography Services | SRX Visuals Philadelphia',
+      isPartOf: { '@id': 'https://srxvisuals.com/#website' },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://srxvisuals.com' },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://srxvisuals.com/services' },
+        ],
+      },
+    },
+    {
+      '@type': 'Service',
+      name: 'Track & Field Meet Photography',
+      provider: { '@id': 'https://srxvisuals.com/#business' },
+      areaServed: 'Philadelphia, PA',
+      description: 'Full meet coverage — sprints, distance, hurdles, field events, and relays. Shot by a competing athlete who knows the sport. Selects within 24 hours.',
+      serviceType: 'Sports Photography',
+    },
+    {
+      '@type': 'Service',
+      name: 'Game Day Coverage',
+      provider: { '@id': 'https://srxvisuals.com/#business' },
+      areaServed: 'Philadelphia, PA',
+      description: 'Sideline and editorial coverage for soccer, lacrosse, basketball, football, and more. High-energy action photography from someone who knows how to anticipate the moment.',
+      serviceType: 'Sports Photography',
+    },
+    {
+      '@type': 'Service',
+      name: 'Athlete Portraits & Headshots',
+      provider: { '@id': 'https://srxvisuals.com/#business' },
+      areaServed: 'Philadelphia, PA',
+      description: 'Individual athlete portraits and headshots for recruiting profiles, social media, college applications, and personal branding.',
+      serviceType: 'Portrait Photography',
+    },
+    {
+      '@type': 'Service',
+      name: 'Team Photography',
+      provider: { '@id': 'https://srxvisuals.com/#business' },
+      areaServed: 'Philadelphia, PA',
+      description: 'Full team sessions including group shots and individual portraits. Available for any sport.',
+      serviceType: 'Sports Photography',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How quickly will I receive my photos?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Selects are delivered within 24 hours. Final edited images are delivered within 72 hours, all via a secure download link.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What areas does SRX Visuals cover?',
+          acceptedAnswer: { '@type': 'Answer', text: 'SRX Visuals is based in Philadelphia, PA and covers the greater Philadelphia area and Delaware Valley. Travel is available for larger projects.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can I book SRX Visuals for a high school track meet?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. High school track meets and athletics events are a core specialty. Sawyer Roman is a competitive track and field athlete, so he knows exactly where to be and when.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you shoot sports other than track and field?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes — SRX Visuals covers soccer, lacrosse, basketball, football, wrestling, and more. Custom sessions are also available for any sport or creative project.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do I book a session?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Fill out the contact form at srxvisuals.com/contact or email sawyer@srxvisuals.com. Sawyer responds personally within two business days.' },
+        },
+      ],
+    },
+  ],
+};
+
+import Script from 'next/script';
 import PageHeader from '../../components/PageHeader';
 import Photo from '../../components/Photo';
 import Reveal from '../../components/Reveal';
@@ -34,6 +129,7 @@ const CAPABILITY_STATS = [
 export default function ServicesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }} />
       <PageHeader
         index="03 / 05"
         eyebrow="Services - What I offer"

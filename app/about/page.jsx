@@ -1,12 +1,65 @@
 export const metadata = {
-  title: 'About Sawyer Roman | Philadelphia Sports Photographer',
-  description: 'Sawyer Roman is a track and field athlete and sports photographer based in Philadelphia, PA. Founder of SRX Visuals — covering meets, game days, and custom sessions since 2023.',
+  title: 'About Sawyer Roman | Philadelphia Sports Photographer & Track Athlete',
+  description: 'Sawyer Roman is a competitive track and field athlete and sports photographer based in Philadelphia, PA. Founder of SRX Visuals — covering track meets, game days, athlete portraits, and custom sessions since 2023. Trained to compete, built to capture.',
+  keywords: [
+    'Sawyer Roman photographer',
+    'Sawyer Roman Philadelphia',
+    'SRX Visuals photographer',
+    'Philadelphia track and field photographer',
+    'athlete photographer Philadelphia',
+    'track athlete photographer Philadelphia',
+    'sports photographer Philadelphia about',
+  ],
   alternates: { canonical: 'https://srxvisuals.com/about' },
   openGraph: {
-    title: 'About Sawyer Roman | Philadelphia Sports Photographer',
-    description: 'Track and field athlete turned photographer. Based in Philadelphia, covering sports and custom sessions since 2023.',
+    title: 'About Sawyer Roman | Philadelphia Sports Photographer & Track Athlete',
+    description: 'Track and field athlete and photographer based in Philadelphia. Founder of SRX Visuals, covering sports and custom sessions since 2023. Trained to compete, built to capture.',
     url: 'https://srxvisuals.com/about',
   },
+};
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ProfilePage',
+      '@id': 'https://srxvisuals.com/about#webpage',
+      url: 'https://srxvisuals.com/about',
+      name: 'About Sawyer Roman | Philadelphia Sports Photographer',
+      isPartOf: { '@id': 'https://srxvisuals.com/#website' },
+      about: { '@id': 'https://srxvisuals.com/#sawyer' },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://srxvisuals.com' },
+          { '@type': 'ListItem', position: 2, name: 'About', item: 'https://srxvisuals.com/about' },
+        ],
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://srxvisuals.com/#sawyer',
+      name: 'Sawyer Roman',
+      jobTitle: 'Sports Photographer',
+      description: 'Competitive track and field athlete and sports photographer based in Philadelphia, PA. Founder of SRX Visuals. Covering athletics events, game days, and custom sessions since 2023.',
+      url: 'https://srxvisuals.com/about',
+      email: 'sawyer@srxvisuals.com',
+      worksFor: { '@id': 'https://srxvisuals.com/#business' },
+      hasOccupation: {
+        '@type': 'Occupation',
+        name: 'Sports Photographer',
+        occupationLocation: { '@type': 'City', name: 'Philadelphia' },
+        skills: 'Track and field photography, sports action photography, athlete portraiture, game day coverage',
+      },
+      knowsAbout: ['Track and field', 'Sports photography', 'Athlete portraiture', 'Game day coverage', 'Philadelphia sports'],
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Philadelphia',
+        addressRegion: 'PA',
+        addressCountry: 'US',
+      },
+    },
+  ],
 };
 
 import PageHeader from '../../components/PageHeader';
@@ -32,6 +85,7 @@ const TIMELINE = [
 export default function AboutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} />
       <PageHeader
         index="04 / 05"
         eyebrow="About - The photographer"

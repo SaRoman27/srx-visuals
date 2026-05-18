@@ -1,11 +1,38 @@
 export const metadata = {
   title: 'SRX Visuals | Sports Photographer in Philadelphia, PA',
-  description: 'SRX Visuals is a Philadelphia sports photography studio run by Sawyer Roman — a track and field athlete covering meets, game days, athlete portraits, and custom sessions.',
+  description: 'SRX Visuals — Philadelphia sports photography by Sawyer Roman, a competitive track and field athlete. Track meets, game days, athlete portraits, team photos, and custom sessions. Selects within 24 hours.',
+  keywords: [
+    'sports photographer Philadelphia PA',
+    'sports photographer near me',
+    'Philadelphia sports photography',
+    'track and field photographer Philadelphia',
+    'game day photographer Philadelphia',
+    'athlete portrait photographer Philadelphia',
+    'SRX Visuals',
+    'Sawyer Roman photographer',
+  ],
   alternates: { canonical: 'https://srxvisuals.com' },
   openGraph: {
     title: 'SRX Visuals | Sports Photographer in Philadelphia, PA',
-    description: 'Track meets, game days, athlete portraits, and custom sessions. Philadelphia sports photographer and track & field athlete.',
+    description: 'Track meets, game days, athlete portraits, and custom sessions. Philadelphia sports photographer and competitive track & field athlete. Selects within 24 hours.',
     url: 'https://srxvisuals.com',
+    type: 'website',
+  },
+};
+
+const homeSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://srxvisuals.com/#webpage',
+  url: 'https://srxvisuals.com',
+  name: 'SRX Visuals | Sports Photographer in Philadelphia, PA',
+  isPartOf: { '@id': 'https://srxvisuals.com/#website' },
+  about: { '@id': 'https://srxvisuals.com/#business' },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://srxvisuals.com' },
+    ],
   },
 };
 
@@ -20,6 +47,7 @@ import { HERO_FRAMES, GALLERY, PROJECTS, STATS, CLIENTS } from '../data';
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }} />
       <Hero
         frames={HERO_FRAMES}
         eyebrow="Sports and creative photography · Philadelphia"
