@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'SRX Visuals | Sports Photographer in Philadelphia, PA',
-  description: 'SRX Visuals — Philadelphia sports photography by Sawyer Roman, a competitive track and field athlete. Track meets, game days, athlete portraits, team photos, and custom sessions. Selects within 24 hours.',
+  description: 'SRX Visuals — Philadelphia sports photography by a small team of competitive track and field athletes and creatives. Track meets, game days, athlete portraits, team photos, and custom sessions. Selects within 24 hours.',
   keywords: [
     'sports photographer Philadelphia PA',
     'sports photographer near me',
@@ -73,7 +73,7 @@ export default function HomePage() {
               lineHeight: 1.05, letterSpacing: 1, textTransform: 'uppercase', color: '#fff',
               margin: 0,
             }}>
-              I shoot the moments<br />
+              We shoot the moments<br />
               <span style={{ color: 'var(--color-muted)' }}>that actually matter.</span>
             </Reveal>
             <Reveal delay={1} as="p" style={{

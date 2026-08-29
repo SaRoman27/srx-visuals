@@ -40,7 +40,7 @@ export const GALLERY = [
 export const SERVICES = [
   {
     num: '01', title: 'Sports photography',
-    desc: 'Track meets, game days, practices, tournaments. I cover it all. As an athlete myself, I know where the good moments happen and how to be in position when they do. Delivered within 24 hours.',
+    desc: 'Track meets, game days, practices, tournaments. We cover it all. As athletes ourselves, we know where the good moments happen and how to be in position when they do. Delivered within 24 hours.',
     cover: u('1521412644187-c49fa049e84d', 800, 600),
     bullets: ['Track & field meets', 'Multi-sport game days', 'Season-long coverage'],
   },
@@ -52,13 +52,13 @@ export const SERVICES = [
   },
   {
     num: '03', title: 'Team coverage',
-    desc: 'Full team shoots, group photos, and sideline coverage for the whole roster. I work fast and keep it organized so nobody is standing around waiting.',
+    desc: 'Full team shoots, group photos, and sideline coverage for the whole roster. Our team works fast and keeps everything organized so nobody is standing around waiting.',
     cover: u('1532444458054-01a7dd3e9fca', 800, 600),
     bullets: ['Team & group photos', 'Full roster sessions', 'Game-day sideline'],
   },
   {
     num: '04', title: 'Custom work',
-    desc: "Got something specific in mind? I'm open to it. Portraits, headshots, brand shoots, events. If you have a vision, I'll work with you to bring it to life. Every project gets the same level of attention.",
+    desc: "Got something specific in mind? We're open to it. Portraits, headshots, brand shoots, events. If you have a vision, we'll work with you to bring it to life. Every project gets the same level of attention.",
     cover: u('1493225457124-a3eb161ffa5f', 800, 600),
     bullets: ['Headshots & brand shoots', 'Event coverage', 'Personal projects'],
   },

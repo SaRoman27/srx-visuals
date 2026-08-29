@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Portfolio | Sports Photography Archive — SRX Visuals Philadelphia',
-  description: 'Browse the live SRX Visuals photo archive — track meets, game days, athlete portraits, and creative sessions from 2023 through 2026. Sports photography by Sawyer Roman, Philadelphia PA.',
+  description: 'Browse the live SRX Visuals photo archive — track meets, game days, athlete portraits, and creative sessions from 2023 through 2026. Sports photography by the SRX Visuals team, Philadelphia PA.',
   keywords: [
     'sports photography portfolio Philadelphia',
     'track meet photos Philadelphia',
@@ -13,7 +13,7 @@ export const metadata = {
   alternates: { canonical: 'https://srxvisuals.com/portfolio' },
   openGraph: {
     title: 'Portfolio | Sports Photography Archive — SRX Visuals Philadelphia',
-    description: 'Live archive of track meets, game days, athlete portraits, and creative sessions from 2023 through 2026. Philadelphia sports photography by Sawyer Roman.',
+    description: 'Live archive of track meets, game days, athlete portraits, and creative sessions from 2023 through 2026. Philadelphia sports photography by the SRX Visuals team.',
     url: 'https://srxvisuals.com/portfolio',
   },
 };
@@ -26,7 +26,7 @@ const portfolioSchema = {
       '@id': 'https://srxvisuals.com/portfolio#webpage',
       url: 'https://srxvisuals.com/portfolio',
       name: 'Sports Photography Portfolio | SRX Visuals Philadelphia',
-      description: 'Live archive of sports photography by Sawyer Roman — track meets, game days, athlete portraits, and creative sessions from 2023 through 2026.',
+      description: 'Live archive of sports photography by the SRX Visuals team — track meets, game days, athlete portraits, and creative sessions from 2023 through 2026.',
       isPartOf: { '@id': 'https://srxvisuals.com/#website' },
       author: { '@id': 'https://srxvisuals.com/#sawyer' },
       breadcrumb: {
@@ -92,7 +92,7 @@ export default function PortfolioPage() {
           <Reveal>
             <div className="t-caption" style={{ marginBottom: 16 }}>Beyond the gallery - 2026</div>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 2.2vw, 22px)', lineHeight: 1.55, color: 'var(--color-body-strong)' }}>
-              For private sets, unreleased frames, or licensing - write to the studio and Sawyer will respond personally within two working days.
+              For private sets, unreleased frames, or licensing - write to the studio and our team will respond within two working days.
             </p>
           </Reveal>
           <Reveal delay={1} style={{ display: 'flex', justifyContent: 'flex-end' }}>
