@@ -126,6 +126,34 @@ const CAPABILITY_STATS = [
   { value: '24hr',    label: 'Edit-to-delivery turnaround' },
 ];
 
+const SEO_PAGES = [
+  {
+    href: '/sports-photographer-philadelphia',
+    title: 'Sports Photographer Philadelphia',
+    description: 'General sports photography coverage in Philadelphia, PA.',
+  },
+  {
+    href: '/track-and-field-photographer-philadelphia',
+    title: 'Track and Field Photographer Philadelphia',
+    description: 'Meet-day coverage for track events, relays, jumps, and throws.',
+  },
+  {
+    href: '/game-day-photographer-philadelphia',
+    title: 'Game Day Photographer Philadelphia',
+    description: 'Sideline and action coverage for multi-sport game days.',
+  },
+  {
+    href: '/athlete-portraits-philadelphia',
+    title: 'Athlete Portrait Photographer Philadelphia',
+    description: 'Portraits and headshots for recruiting and athlete branding.',
+  },
+  {
+    href: '/team-photography-philadelphia',
+    title: 'Team Photography Philadelphia',
+    description: 'Team photo day sessions with group and individual portraits.',
+  },
+];
+
 export default function ServicesPage() {
   return (
     <>
@@ -159,6 +187,23 @@ export default function ServicesPage() {
             <Link href="/contact" style={{ color: '#fff', justifySelf: 'end', fontSize: 20, textDecoration: 'none' }}>→</Link>
           </Reveal>
         ))}
+      </section>
+
+      <section className="sp" style={{ borderBottom: '1px solid var(--color-hairline)' }}>
+        <div className="t-caption" style={{ marginBottom: 24 }}>Location pages - Philadelphia, PA</div>
+        <div className="g-3">
+          {SEO_PAGES.map((page, i) => (
+            <Reveal key={page.href} delay={i % 3} style={{ borderTop: '1px solid var(--color-hairline)', paddingTop: 18 }}>
+              <h3 style={{ margin: 0, fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: 1, color: '#fff', fontSize: 'clamp(22px, 2.6vw, 30px)' }}>
+                {page.title}
+              </h3>
+              <p className="t-body-md" style={{ color: 'var(--color-body)', marginTop: 10, marginBottom: 18 }}>
+                {page.description}
+              </p>
+              <Link href={page.href} className="btn-ghost">Open page</Link>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       {/* Methodology */}
