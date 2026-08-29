@@ -214,6 +214,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMVSQYQXJ3"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-NMVSQYQXJ3');
+            `,
+          }}
+        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
