@@ -80,7 +80,7 @@ export default function HomePage() {
               marginTop: 40, fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 2.2vw, 22px)', lineHeight: 1.55,
               color: 'var(--color-body-strong)',
             }}>
-              SRX Visuals is a one-person photography studio out of Philadelphia. I'm a track and field athlete who started shooting the sports I compete in, and kept going. I cover meets, game days, practices, and custom sessions for athletes, teams, and brands who want photos that actually look good.
+              SRX Visuals is a small photography team out of Philadelphia. We’re athletes and creatives who started shooting the sports we know and compete in, and kept going. We cover meets, game days, practices, and custom sessions for athletes, teams, and brands who want photos that actually look good.
             </Reveal>
             <Reveal delay={2} style={{ marginTop: 40, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
               <Link href="/portfolio" className="btn-primary">See the work</Link>
