@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'About Sawyer Roman | Philadelphia Sports Photographer & Track Athlete',
-  description: 'Sawyer Roman is a competitive track and field athlete and sports photographer based in Philadelphia, PA. Founder of SRX Visuals — covering track meets, game days, athlete portraits, and custom sessions since 2023. Trained to compete, built to capture.',
+  description: 'SRX Visuals is a competitive track and field-driven sports photography team based in Philadelphia, PA, led by Sawyer Roman. Covering track meets, game days, athlete portraits, and custom sessions since 2023. Trained to compete, built to capture.',
   keywords: [
     'Sawyer Roman photographer',
     'Sawyer Roman Philadelphia',
@@ -13,7 +13,7 @@ export const metadata = {
   alternates: { canonical: 'https://srxvisuals.com/about' },
   openGraph: {
     title: 'About Sawyer Roman | Philadelphia Sports Photographer & Track Athlete',
-    description: 'Track and field athlete and photographer based in Philadelphia. Founder of SRX Visuals, covering sports and custom sessions since 2023. Trained to compete, built to capture.',
+    description: 'Track and field athletes and photographers based in Philadelphia. A small team led by Sawyer Roman, covering sports and custom sessions since 2023. Trained to compete, built to capture.',
     url: 'https://srxvisuals.com/about',
   },
 };
@@ -41,7 +41,7 @@ const aboutSchema = {
       '@id': 'https://srxvisuals.com/#sawyer',
       name: 'Sawyer Roman',
       jobTitle: 'Sports Photographer',
-      description: 'Competitive track and field athlete and sports photographer based in Philadelphia, PA. Founder of SRX Visuals. Covering athletics events, game days, and custom sessions since 2023.',
+      description: 'Competitive track and field athlete and sports photographer based in Philadelphia, PA. Founder and lead photographer at SRX Visuals. Covering athletics events, game days, and custom sessions since 2023.',
       url: 'https://srxvisuals.com/about',
       email: 'sawyer@srxvisuals.com',
       worksFor: { '@id': 'https://srxvisuals.com/#business' },
@@ -70,13 +70,13 @@ import Link from 'next/link';
 import { ABOUT_PORTRAITS } from '../../data';
 
 const PHILOSOPHY = [
-  { n: '01', t: 'Know the sport.', d: "I compete in track and field, so I already know where to stand when the gun fires. That background shows up in every shoot. I'm not guessing at the moment, I'm ready for it." },
-  { n: '02', t: 'Cool, not warm.', d: 'I grade neutral to cool across all my work. It gives everything a consistent, clean look that holds up whether you\'re viewing it on a screen or printing it large.' },
-  { n: '03', t: 'Built to last.',  d: "I edit with the final product in mind: whether that's a print, a post, or a publication. If it doesn't look right at full size, it doesn't leave my hands." },
+  { n: '01', t: 'Know the sport.', d: "We compete in track and field, so we already know where to stand when the gun fires. That background shows up in every shoot. We're not guessing at the moment, we're ready for it." },
+  { n: '02', t: 'Cool, not warm.', d: 'We grade neutral to cool across all our work. It gives everything a consistent, clean look that holds up whether you\'re viewing it on a screen or printing it large.' },
+  { n: '03', t: 'Built to last.',  d: "We edit with the final product in mind: whether that's a print, a post, or a publication. If it doesn't look right at full size, it doesn't leave our hands." },
 ];
 
 const TIMELINE = [
-  { y: '2025', t: 'SRX Visuals launched',  d: 'Started taking on clients officially under the SRX Visuals name. One photographer, one camera, fully committed.' },
+  { y: '2025', t: 'SRX Visuals launched',  d: 'Started taking on clients officially under the SRX Visuals name. A small team, shared cameras, fully committed.' },
   { y: '2025', t: 'First full season',     d: 'Covered a complete season sideline with WEXP and LS Athletics: game days, practices, and everything between.' },
   { y: '2024', t: 'First credential',      d: 'First sideline pass at a local derby match. One camera, one lens, zero backup cards. Figured it out.' },
   { y: '2023', t: 'First frames',          d: 'Started shooting local track meets and athletics events. Monochrome from day one, because it just looked right.' },
@@ -88,9 +88,9 @@ export default function AboutPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} />
       <PageHeader
         index="04 / 05"
-        eyebrow="About - The photographer"
+        eyebrow="About - The team"
         title={<>The<br />studio.</>}
-        lede="SRX Visuals is run by Sawyer Roman, a track and field athlete and photographer based in Philadelphia, PA."
+        lede="SRX Visuals is led by Sawyer Roman, alongside a small team of track and field athletes and photographers based in Philadelphia, PA."
       />
 
       {/* Portrait + bio */}
@@ -115,13 +115,13 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={1} style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 20 }}>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.6, color: 'var(--color-body-strong)' }}>
-                I'm a track and field athlete based in Philadelphia. I started photographing sports because I wanted better coverage of the events I was already competing in. Once I had a camera on the sideline, I didn't want to put it down.
+                We're a track and field-focused team based in Philadelphia. We started photographing sports because we wanted better coverage of the events we were already competing in. Once we had cameras on the sideline, we didn't want to put them down.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(15px, 1.8vw, 18px)', lineHeight: 1.65, color: 'var(--color-body)' }}>
-                SRX Visuals is how I work with clients. I shoot track meets, game days, and multi-sport events across the Philadelphia area. I also take on custom work: portraits, headshots, brand sessions, and whatever else you have in mind.
+                SRX Visuals is how we work with clients. We shoot track meets, game days, and multi-sport events across the Philadelphia area. We also take on custom work: portraits, headshots, brand sessions, and whatever else you have in mind.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(15px, 1.8vw, 18px)', lineHeight: 1.65, color: 'var(--color-body)' }}>
-                Competing gives me a real advantage behind the lens. I know which moments matter and where to be when they happen, because I've been on the other side of the camera too.
+                Competing gives our team a real advantage behind the lens. We know which moments matter and where to be when they happen, because we've been on the other side of the camera too.
               </p>
             </Reveal>
             <Reveal delay={2} style={{ marginTop: 32, display: 'flex', gap: 8, flexWrap: 'wrap' }}>

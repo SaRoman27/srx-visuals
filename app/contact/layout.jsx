@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Contact | Book a Sports Photography Session in Philadelphia, PA',
-  description: 'Book Sawyer Roman at SRX Visuals for track meets, game-day sideline coverage, athlete portraits, headshots, team photos, or custom sessions in Philadelphia, PA. Responds personally within two business days.',
+  description: 'Book SRX Visuals for track meets, game-day sideline coverage, athlete portraits, headshots, team photos, or custom sessions in Philadelphia, PA. Our team responds within two business days.',
   keywords: [
     'book sports photographer Philadelphia',
     'hire sports photographer Philadelphia',

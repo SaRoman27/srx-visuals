@@ -75,7 +75,7 @@ const servicesSchema = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'How quickly will I receive my photos?',
+          name: 'How quickly are photos delivered?',
           acceptedAnswer: { '@type': 'Answer', text: 'Selects are delivered within 24 hours. Final edited images are delivered within 72 hours, all via a secure download link.' },
         },
         {
@@ -85,8 +85,8 @@ const servicesSchema = {
         },
         {
           '@type': 'Question',
-          name: 'Can I book SRX Visuals for a high school track meet?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes. High school track meets and athletics events are a core specialty. Sawyer Roman is a competitive track and field athlete, so he knows exactly where to be and when.' },
+          name: 'Can SRX Visuals be booked for a high school track meet?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. High school track meets and athletics events are a core specialty. SRX Visuals is led by a competitive track and field athlete, so the team knows exactly where to be and when.' },
         },
         {
           '@type': 'Question',
@@ -95,8 +95,8 @@ const servicesSchema = {
         },
         {
           '@type': 'Question',
-          name: 'How do I book a session?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Fill out the contact form at srxvisuals.com/contact or email sawyer@srxvisuals.com. Sawyer responds personally within two business days.' },
+          name: 'How can a session be booked?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Fill out the contact form at srxvisuals.com/contact or email sawyer@srxvisuals.com. Our team responds within two business days.' },
         },
       ],
     },
@@ -112,11 +112,11 @@ import Link from 'next/link';
 import { SERVICES } from '../../data';
 
 const METHODOLOGY = [
-  { n: '01', t: 'Talk it through', d: "A quick conversation about what you need. I want to understand the event, the deliverables, and what you're going for before anything else." },
-  { n: '02', t: 'Prep',           d: 'For bigger projects, I scout the location beforehand so I already know my angles and positioning before shoot day.' },
-  { n: '03', t: 'Show up ready',  d: "On the day, I'm there early and set up before anything starts. Live events don't give you second chances, so I don't need them." },
+  { n: '01', t: 'Talk it through', d: "A quick conversation about what you need. We want to understand the event, the deliverables, and what you're going for before anything else." },
+  { n: '02', t: 'Prep',           d: 'For bigger projects, we scout the location beforehand so we already know our angles and positioning before shoot day.' },
+  { n: '03', t: 'Show up ready',  d: "On the day, we're there early and set up before anything starts. Live events don't give you second chances, so we don't need them." },
   { n: '04', t: 'Deliver fast',   d: 'Selects within 24 hours, final edits within 72. Everything is delivered through a secure download link.' },
-  { n: '05', t: 'Keep it safe',   d: 'I archive every shoot in long-term storage. If you need something re-delivered or want to revisit old work, just reach out.' },
+  { n: '05', t: 'Keep it safe',   d: 'We archive every shoot in long-term storage. If you need something re-delivered or want to revisit old work, just reach out.' },
 ];
 
 const CAPABILITY_STATS = [
@@ -132,9 +132,9 @@ export default function ServicesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }} />
       <PageHeader
         index="03 / 05"
-        eyebrow="Services - What I offer"
-        title={<>What I<br />shoot.</>}
-        lede="Sports coverage and custom work, both handled the same way. From a single meet to a full season, I deliver photos that are actually worth keeping."
+        eyebrow="Services - What we offer"
+        title={<>What we<br />shoot.</>}
+        lede="Sports coverage and custom work, both handled the same way. From a single meet to a full season, we deliver photos that are actually worth keeping."
       />
 
       {/* Service rows */}
@@ -170,7 +170,7 @@ export default function ServicesPage() {
               fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 88px)',
               lineHeight: 1.05, textTransform: 'uppercase', letterSpacing: 1, color: '#fff', margin: 0
             }}>
-              How I<br />work.
+              How we<br />work.
             </Reveal>
           </div>
           <div>
